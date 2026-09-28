@@ -1,0 +1,3106 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>KPSS Türkçe 100 Soru — Hatasız Çalışma</title>
+<style>
+:root{--bg:#f3f6fb;--card:#fff;--ink:#152033;--muted:#65748b;--line:#dbe2eb;--blue:#123d73;--bad:#b42318;--good:#147a4b;--warn:#8a5b00}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+header{position:sticky;top:0;z-index:20;background:rgba(243,246,251,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.wrap{max-width:780px;margin:auto;padding:14px}.top{display:flex;justify-content:space-between;gap:10px;align-items:center}
+h1{font-size:22px;line-height:1.15;margin:0}.sub{color:var(--muted);font-size:12px;margin-top:5px}
+.barbg{height:9px;background:#e6ebf2;border-radius:999px;overflow:hidden;margin-top:10px}.bar{height:100%;background:#1e5a9a;width:0}
+.stats{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}.stat{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:12px}
+.btn{border:0;border-radius:11px;padding:11px 14px;background:var(--blue);color:#fff;font-weight:800;cursor:pointer}.btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.card,.qcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:17px;margin-top:14px;box-shadow:0 7px 24px rgba(15,23,42,.05)}
+.qcard{display:block}body.js-mode .qcard{display:none}body.js-mode .qcard.active{display:block}
+.topic{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#1e5a9a;font-weight:900}.question{font-size:18px;line-height:1.5;font-weight:800;margin:10px 0 14px}
+.option{display:flex;align-items:flex-start;gap:10px;width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px;margin:7px 0;cursor:pointer;font-size:15px;line-height:1.35}
+.option input{margin-top:4px;transform:scale(1.15)}.feedback{display:none;margin-top:12px;padding:13px;border-radius:12px;line-height:1.55}
+.feedback.bad{display:block;background:#fff3f2;border:1px solid #f0c3bd}.feedback.good{display:block;background:#eff9f3;border:1px solid #b9e0ca}
+.box{padding:10px;margin-top:9px;background:#fff8e6;border-left:4px solid var(--warn);border-radius:8px}
+.static-note{font-size:12px;color:var(--muted);margin-top:8px}
+#noscript{padding:14px;background:#fff8e6;border:1px solid #e8d4a2;border-radius:12px;margin-top:14px}
+body.js-mode #noscript{display:none}
+@media(max-width:640px){.top{flex-direction:column;align-items:stretch}.btn{width:100%}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="top">
+    <div><h1>KPSS Önlisans Türkçe — 100 Soru</h1>
+      <div class="sub">Yanlışta: konu → önemli bilgi → kodlama → pekiştirme → ana soruya dönüş.</div>
+    </div>
+    <button class="btn secondary" id="reset">Sıfırla</button>
+  </div>
+  <div class="barbg"><div class="bar" id="bar"></div></div>
+  <div class="sub" id="status">100 soru listelendi — seçimler aşağıdaki sorulardan yapılabilir.</div>
+  <div class="stats"><span class="stat">Doğru: <b id="correct">0</b></span><span class="stat">Yanlış: <b id="wrong">0</b></span></div>
+</div></header>
+
+<main class="wrap">
+<div id="noscript">Bu dosya herhangi bir JavaScript çalıştırıcısına ihtiyaç duymadan 100 soruyu ve A/B/C/D/E seçeneklerini gösterir. Etkileşimli “yanlışta pekiştirme” akışı ise Safari/Chrome gibi normal bir tarayıcıda çalışır.</div>
+<div id="questions">
+
+    <article class="qcard" id="qcard-1" data-qno="1" data-topic="Sözcükte Anlam"
+             data-answer="A"
+             data-note="Özenli; bir işi dikkat ederek, titizlikle yapan demektir."
+             data-code="ÖZENLİ = ÖZEN + TİTİZLİK"
+             data-expl="Doğru cevap A’dır; “özenli” ile “titiz” anlamca yakındır.">
+      <div class="topic">1. Sözcükte Anlam</div>
+      <div class="question">“Özenli” sözcüğünün anlamca en yakın karşılığı aşağıdakilerden hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q1" value="A" data-q="1">
+          <span><b>A)</b> A) Dikkatli ve titiz</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q1" value="B" data-q="1">
+          <span><b>B)</b> B) Gelişigüzel</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q1" value="C" data-q="1">
+          <span><b>C)</b> C) Kararsız</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q1" value="D" data-q="1">
+          <span><b>D)</b> D) Gösterişli</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q1" value="E" data-q="1">
+          <span><b>E)</b> E) Aceleci</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-2" data-qno="2" data-topic="Sözcükte Anlam"
+             data-answer="B"
+             data-note="Yadsımak, bir şeyi inkâr etmek veya kabul etmemek anlamında kullanılır."
+             data-code="YADSIMA = “YOK SAYMA”"
+             data-expl="Doğru cevap B’dir. Yadsımak = inkâr etmek.">
+      <div class="topic">2. Sözcükte Anlam</div>
+      <div class="question">“Yadsımak” sözcüğünün anlamı aşağıdakilerden hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q2" value="A" data-q="2">
+          <span><b>A)</b> A) Kabul etmek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q2" value="B" data-q="2">
+          <span><b>B)</b> B) İnkâr etmek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q2" value="C" data-q="2">
+          <span><b>C)</b> C) Övmek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q2" value="D" data-q="2">
+          <span><b>D)</b> D) Hatırlamak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q2" value="E" data-q="2">
+          <span><b>E)</b> E) Benimsemek</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-3" data-qno="3" data-topic="Sözcükte Anlam"
+             data-answer="C"
+             data-note="“Ağır” gerçek anlamıyla ağırlık bildirebilir; “sözleri ağır geldi” ifadesinde duygusal etkiden söz edildiği için mecazdır."
+             data-code="AĞIR SÖZ = KİLO DEĞİL, ETKİ"
+             data-expl="Doğru cevap C’dir. Burada fiziksel ağırlık değil, kırıcı/etkileyici olma anlamı vardır.">
+      <div class="topic">3. Sözcükte Anlam</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde “ağır” sözcüğü mecaz anlamda kullanılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q3" value="A" data-q="3">
+          <span><b>A)</b> A) Bu çanta çok ağır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q3" value="B" data-q="3">
+          <span><b>B)</b> B) Ağır yükü tek başına taşıdı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q3" value="C" data-q="3">
+          <span><b>C)</b> C) Sözleri bana çok ağır geldi.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q3" value="D" data-q="3">
+          <span><b>D)</b> D) Ağır kutuyu kamyona koydular.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q3" value="E" data-q="3">
+          <span><b>E)</b> E) Ağır bavulu yere bıraktı.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-4" data-qno="4" data-topic="Sözcükte Anlam"
+             data-answer="D"
+             data-note="Yakınmak = şikâyet etmek, dert yanmak."
+             data-code="YAKINMA = YAKINMAK DEĞİL, DERTLENMEK"
+             data-expl="Doğru cevap D’dir.">
+      <div class="topic">4. Sözcükte Anlam</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde “yakınmak” sözcüğü “şikâyet etmek” anlamında kullanılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q4" value="A" data-q="4">
+          <span><b>A)</b> A) Arkadaşına iyice yakın durdu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q4" value="B" data-q="4">
+          <span><b>B)</b> B) Evleri okula çok yakındı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q4" value="C" data-q="4">
+          <span><b>C)</b> C) Başarısından ailesine yakındı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q4" value="D" data-q="4">
+          <span><b>D)</b> D) Sürekli işlerin yoğunluğundan yakınıyordu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q4" value="E" data-q="4">
+          <span><b>E)</b> E) Masanın kenarına yakın oturdu.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-5" data-qno="5" data-topic="Sözcükte Anlam"
+             data-answer="B"
+             data-note="Varsayım, henüz kanıtlanmamış ancak bir düşünceyi açıklamak için geçici olarak kabul edilen kabuldür."
+             data-code="VAR SAY = GEÇİCİ OLARAK DOĞRU KABUL ET"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">5. Sözcükte Anlam</div>
+      <div class="question">“Varsayım” sözcüğünün anlamı aşağıdakilerden hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q5" value="A" data-q="5">
+          <span><b>A)</b> A) Kesin kanıt</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q5" value="B" data-q="5">
+          <span><b>B)</b> B) Geçici olarak doğru kabul edilen düşünce</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q5" value="C" data-q="5">
+          <span><b>C)</b> C) Sonuç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q5" value="D" data-q="5">
+          <span><b>D)</b> D) Tanım</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q5" value="E" data-q="5">
+          <span><b>E)</b> E) Eleştiri</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-6" data-qno="6" data-topic="Sözcükte Anlam"
+             data-answer="C"
+             data-note="Özgün ve taklit birbirinin karşıtıdır; diğer çiftler eş veya yakın anlamlıdır."
+             data-code="ÖZGÜN ≠ TAKLİT"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">6. Sözcükte Anlam</div>
+      <div class="question">Aşağıdaki sözcük çiftlerinden hangisi zıt anlamlıdır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q6" value="A" data-q="6">
+          <span><b>A)</b> A) Yarar – Fayda</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q6" value="B" data-q="6">
+          <span><b>B)</b> B) Cömert – Eli açık</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q6" value="C" data-q="6">
+          <span><b>C)</b> C) Özgün – Taklit</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q6" value="D" data-q="6">
+          <span><b>D)</b> D) Konuk – Misafir</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q6" value="E" data-q="6">
+          <span><b>E)</b> E) Hızlı – Süratli</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-7" data-qno="7" data-topic="Sözcükte Anlam"
+             data-answer="C"
+             data-note="“İnce düşünce” fiziksel kalınlık değil, ayrıntılı ve duyarlı düşünme anlamıdır."
+             data-code="İNCE DÜŞÜNCE = KALINLIK DEĞİL, HASSASİYET"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">7. Sözcükte Anlam</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde “ince” sözcüğü gerçek anlamından uzaklaşmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q7" value="A" data-q="7">
+          <span><b>A)</b> A) İnce ip hemen koptu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q7" value="B" data-q="7">
+          <span><b>B)</b> B) İnce bir dal seçti.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q7" value="C" data-q="7">
+          <span><b>C)</b> C) İnce düşünceleriyle herkesi etkiledi.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q7" value="D" data-q="7">
+          <span><b>D)</b> D) İnce kağıdı ikiye katladı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q7" value="E" data-q="7">
+          <span><b>E)</b> E) İnce kumaştan gömlek aldı.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-8" data-qno="8" data-topic="Sözcükte Anlam"
+             data-answer="B"
+             data-note="Yetkin; belli bir alanda yeterli, becerikli ve olgunlaşmış olmak demektir."
+             data-code="YETKİN = İŞİNİN EHLİ"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">8. Sözcükte Anlam</div>
+      <div class="question">“Yetkin” sözcüğünün anlamca en yakın karşılığı aşağıdakilerden hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q8" value="A" data-q="8">
+          <span><b>A)</b> A) Acemi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q8" value="B" data-q="8">
+          <span><b>B)</b> B) İşinin ehli</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q8" value="C" data-q="8">
+          <span><b>C)</b> C) Kararsız</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q8" value="D" data-q="8">
+          <span><b>D)</b> D) Çekingen</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q8" value="E" data-q="8">
+          <span><b>E)</b> E) Dağınık</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-9" data-qno="9" data-topic="Sözcükte Anlam"
+             data-answer="C"
+             data-note="Kanıksamak, tekrarlanan bir duruma alışmak ve onu artık garipsememektir."
+             data-code="KANIKSAMAK = KANIK OLMAK, YADIRGAMAMAK"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">9. Sözcükte Anlam</div>
+      <div class="question">“Kanıksamak” sözcüğü aşağıdakilerden hangisini anlatır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q9" value="A" data-q="9">
+          <span><b>A)</b> A) Unutmayı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q9" value="B" data-q="9">
+          <span><b>B)</b> B) Şaşırmayı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q9" value="C" data-q="9">
+          <span><b>C)</b> C) Alışıp artık yadırgamamayı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q9" value="D" data-q="9">
+          <span><b>D)</b> D) Korkmayı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q9" value="E" data-q="9">
+          <span><b>E)</b> E) Övmeyi</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-10" data-qno="10" data-topic="Sözcükte Anlam"
+             data-answer="C"
+             data-note="Özgün, kendine has; taklit ise başkasını örnek alan demektir."
+             data-code="ÖZGÜN → KENDİSİ; TAKLİT → BAŞKASI"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">10. Sözcükte Anlam</div>
+      <div class="question">“Özgün” sözcüğünün karşıtı aşağıdakilerden hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q10" value="A" data-q="10">
+          <span><b>A)</b> A) Yaratıcı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q10" value="B" data-q="10">
+          <span><b>B)</b> B) Özel</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q10" value="C" data-q="10">
+          <span><b>C)</b> C) Taklit</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q10" value="D" data-q="10">
+          <span><b>D)</b> D) Farklı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q10" value="E" data-q="10">
+          <span><b>E)</b> E) Yeni</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-11" data-qno="11" data-topic="Sözcükte Anlam"
+             data-answer="C"
+             data-note="“Sonuçlar çıktı” ifadesinde fiziksel bir hareket değil, sonuçların açıklanması söz konusudur."
+             data-code="SONUÇ ÇIKAR = ORTAYA ÇIKAR"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">11. Sözcükte Anlam</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde “çıkmak” sözcüğü “ortaya çıkmak, görülmek” anlamındadır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q11" value="A" data-q="11">
+          <span><b>A)</b> A) Çocuk merdivenden çıktı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q11" value="B" data-q="11">
+          <span><b>B)</b> B) Evden erken çıktı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q11" value="C" data-q="11">
+          <span><b>C)</b> C) Sonuçlar öğleden sonra çıktı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q11" value="D" data-q="11">
+          <span><b>D)</b> D) Dağın tepesine çıktı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q11" value="E" data-q="11">
+          <span><b>E)</b> E) Otobüsten çıktı.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-12" data-qno="12" data-topic="Sözcükte Anlam"
+             data-answer="A"
+             data-note="“Kök” dil bilgisinde sözcüğün yapısal temelini ifade eden özel bir terimdir."
+             data-code="DERS ALANINDA ÖZEL ANLAM = TERİM"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">12. Sözcükte Anlam</div>
+      <div class="question">Aşağıdakilerden hangisi terim anlamlı bir sözcüktür?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q12" value="A" data-q="12">
+          <span><b>A)</b> A) Kök</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q12" value="B" data-q="12">
+          <span><b>B)</b> B) Şirin</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q12" value="C" data-q="12">
+          <span><b>C)</b> C) Sıcak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q12" value="D" data-q="12">
+          <span><b>D)</b> D) İnce</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q12" value="E" data-q="12">
+          <span><b>E)</b> E) Tatlı</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-13" data-qno="13" data-topic="Sözcükte Anlam"
+             data-answer="D"
+             data-note="Buradaki “kırılmak” fiziksel bir kırılma değil, gücenmek anlamındadır."
+             data-code="SÖZE KIRILMAK = GÜCENMEK"
+             data-expl="Doğru cevap D’dir.">
+      <div class="topic">13. Sözcükte Anlam</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde “kırılmak” sözcüğü mecaz anlamda kullanılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q13" value="A" data-q="13">
+          <span><b>A)</b> A) Dal rüzgârda kırıldı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q13" value="B" data-q="13">
+          <span><b>B)</b> B) Cam kırıldı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q13" value="C" data-q="13">
+          <span><b>C)</b> C) Kalem kırıldı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q13" value="D" data-q="13">
+          <span><b>D)</b> D) Söylediğin sözlere çok kırıldım.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q13" value="E" data-q="13">
+          <span><b>E)</b> E) Bacak incindi ve kırıldı.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-14" data-qno="14" data-topic="Sözcükte Anlam"
+             data-answer="A"
+             data-note="İlinti = ilişki, bağlantı."
+             data-code="İLİNTİ = İLİŞKİ"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">14. Sözcükte Anlam</div>
+      <div class="question">“İlinti” sözcüğünün anlamı aşağıdakilerden hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q14" value="A" data-q="14">
+          <span><b>A)</b> A) İlişki</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q14" value="B" data-q="14">
+          <span><b>B)</b> B) Uzaklık</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q14" value="C" data-q="14">
+          <span><b>C)</b> C) Çelişki</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q14" value="D" data-q="14">
+          <span><b>D)</b> D) Sessizlik</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q14" value="E" data-q="14">
+          <span><b>E)</b> E) Kesinlik</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-15" data-qno="15" data-topic="Sözcükte Anlam"
+             data-answer="B"
+             data-note="Öngörü, gelecekte olabilecek bir durumu önceden tahmin edebilmedir."
+             data-code="ÖN + GÖR = ÖNCEDEN GÖR"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">15. Sözcükte Anlam</div>
+      <div class="question">“Öngörü” sözcüğünün anlamca en yakın karşılığı hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q15" value="A" data-q="15">
+          <span><b>A)</b> A) Geriyi anlatma</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q15" value="B" data-q="15">
+          <span><b>B)</b> B) Önceden kestirme</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q15" value="C" data-q="15">
+          <span><b>C)</b> C) Kesin kanıt</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q15" value="D" data-q="15">
+          <span><b>D)</b> D) Unutma</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q15" value="E" data-q="15">
+          <span><b>E)</b> E) Çelişki</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-16" data-qno="16" data-topic="Sözcükte Anlam"
+             data-answer="B"
+             data-note="Sitem, açık bir öfke yerine kırgınlık veya beklentinin dile getirilmesidir."
+             data-code="SİTEM = “NİYE BÖYLE YAPTIN?” KIRGINLIĞI"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">16. Sözcükte Anlam</div>
+      <div class="question">“Sitem etmek” aşağıdakilerden hangisine en yakındır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q16" value="A" data-q="16">
+          <span><b>A)</b> A) Övmek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q16" value="B" data-q="16">
+          <span><b>B)</b> B) Kırgınlığını belirtmek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q16" value="C" data-q="16">
+          <span><b>C)</b> C) Emir vermek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q16" value="D" data-q="16">
+          <span><b>D)</b> D) Tehdit etmek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q16" value="E" data-q="16">
+          <span><b>E)</b> E) Kutlamak</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-17" data-qno="17" data-topic="Sözcükte Anlam"
+             data-answer="D"
+             data-note="Nicel nitelikler ölçülebilir ve sayı ile ifade edilebilir. “Beş kilogram” ölçülebilirdir."
+             data-code="NİCEL = SAYI/ÖLÇÜ; NİTEL = NASIL?"
+             data-expl="Doğru cevap D’dir.">
+      <div class="topic">17. Sözcükte Anlam</div>
+      <div class="question">Aşağıdakilerden hangisi nicel bir anlam taşır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q17" value="A" data-q="17">
+          <span><b>A)</b> A) Başarılı öğrenci</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q17" value="B" data-q="17">
+          <span><b>B)</b> B) Güzel kitap</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q17" value="C" data-q="17">
+          <span><b>C)</b> C) Uzun masa</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q17" value="D" data-q="17">
+          <span><b>D)</b> D) Beş kilogramlık paket</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q17" value="E" data-q="17">
+          <span><b>E)</b> E) Etkileyici konuşma</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-18" data-qno="18" data-topic="Sözcükte Anlam"
+             data-answer="C"
+             data-note="“Büyük” bir varlığın nasıl olduğunu niteleyen ölçüsüz bir özelliktir."
+             data-code="NİTEL = NASIL?; NİCEL = KAÇ/NE KADAR?"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">18. Sözcükte Anlam</div>
+      <div class="question">Aşağıdakilerden hangisi nitel anlamlıdır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q18" value="A" data-q="18">
+          <span><b>A)</b> A) Üç metre</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q18" value="B" data-q="18">
+          <span><b>B)</b> B) Yirmi kilogram</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q18" value="C" data-q="18">
+          <span><b>C)</b> C) Büyük ev</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q18" value="D" data-q="18">
+          <span><b>D)</b> D) On iki sayfa</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q18" value="E" data-q="18">
+          <span><b>E)</b> E) Beş litre</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-19" data-qno="19" data-topic="Sözcükte Anlam"
+             data-answer="C"
+             data-note="“Etekleri zil çalmak” bir deyimdir ve çok sevinmek anlamındadır."
+             data-code="DEYİM = KALIP + MECaz ANLAM ÇOĞU ZAMAN"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">19. Sözcükte Anlam</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde deyim kullanılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q19" value="A" data-q="19">
+          <span><b>A)</b> A) Sabah erkenden yola çıktık.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q19" value="B" data-q="19">
+          <span><b>B)</b> B) Dosyaları masaya bıraktı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q19" value="C" data-q="19">
+          <span><b>C)</b> C) Bu haberi duyunca etekleri zil çaldı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q19" value="D" data-q="19">
+          <span><b>D)</b> D) Kitabı çantasına koydu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q19" value="E" data-q="19">
+          <span><b>E)</b> E) Pencereyi kapattı.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-20" data-qno="20" data-topic="Sözcükte Anlam"
+             data-answer="B"
+             data-note="Atasözleri genellikle öğüt veya genel yargı içerir ve kalıplaşmıştır."
+             data-code="ATASÖZÜ = GENEL KURAL/ÖĞÜT"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">20. Sözcükte Anlam</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde atasözü kullanılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q20" value="A" data-q="20">
+          <span><b>A)</b> A) Bu sözleri bana ağır geldi.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q20" value="B" data-q="20">
+          <span><b>B)</b> B) Damlaya damlaya göl olur.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q20" value="C" data-q="20">
+          <span><b>C)</b> C) Çantasını aldı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q20" value="D" data-q="20">
+          <span><b>D)</b> D) Sabah erkenden kalktı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q20" value="E" data-q="20">
+          <span><b>E)</b> E) Kitabı bitirdi.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-21" data-qno="21" data-topic="Cümlede Anlam"
+             data-answer="B"
+             data-note="“nedeniyle” açıkça sebep bildirir."
+             data-code="NEDEN İŞARETLERİ: çünkü, -dığı için, nedeniyle"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">21. Cümlede Anlam</div>
+      <div class="question">“Yoğun kar yağışı nedeniyle yollar trafiğe kapatıldı.” cümlesinde hangi anlam ilişkisi vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q21" value="A" data-q="21">
+          <span><b>A)</b> A) Amaç-sonuç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q21" value="B" data-q="21">
+          <span><b>B)</b> B) Neden-sonuç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q21" value="C" data-q="21">
+          <span><b>C)</b> C) Koşul-sonuç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q21" value="D" data-q="21">
+          <span><b>D)</b> D) Karşılaştırma</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q21" value="E" data-q="21">
+          <span><b>E)</b> E) Benzetme</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-22" data-qno="22" data-topic="Cümlede Anlam"
+             data-answer="B"
+             data-note="“Kazanmak için” yapılan işin amacını bildirir."
+             data-code="AMAÇ = -MAK İÇİN / AMACIYLA"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">22. Cümlede Anlam</div>
+      <div class="question">“Sınavı kazanmak için her gün düzenli soru çözüyor.” cümlesindeki anlam ilişkisi hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q22" value="A" data-q="22">
+          <span><b>A)</b> A) Neden-sonuç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q22" value="B" data-q="22">
+          <span><b>B)</b> B) Amaç-sonuç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q22" value="C" data-q="22">
+          <span><b>C)</b> C) Koşul-sonuç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q22" value="D" data-q="22">
+          <span><b>D)</b> D) Karşılaştırma</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q22" value="E" data-q="22">
+          <span><b>E)</b> E) Olasılık</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-23" data-qno="23" data-topic="Cümlede Anlam"
+             data-answer="A"
+             data-note="“-se/-sa” eki koşul anlamının en güçlü göstergelerindendir."
+             data-code="ŞART = -SA/-SE"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">23. Cümlede Anlam</div>
+      <div class="question">“Düzenli çalışırsan netlerin artar.” cümlesinde hangi ilişki vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q23" value="A" data-q="23">
+          <span><b>A)</b> A) Koşul-sonuç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q23" value="B" data-q="23">
+          <span><b>B)</b> B) Neden-sonuç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q23" value="C" data-q="23">
+          <span><b>C)</b> C) Amaç-sonuç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q23" value="D" data-q="23">
+          <span><b>D)</b> D) Öznel yargı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q23" value="E" data-q="23">
+          <span><b>E)</b> E) Karşılaştırma</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-24" data-qno="24" data-topic="Cümlede Anlam"
+             data-answer="C"
+             data-note="Kişiden kişiye değişebilecek değerlendirmeler öznel yargıdır."
+             data-code="ÖZNEL = BENİM YORUMUM"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">24. Cümlede Anlam</div>
+      <div class="question">Aşağıdakilerden hangisi öznel bir yargıdır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q24" value="A" data-q="24">
+          <span><b>A)</b> A) Ankara Türkiye&#039;nin başkentidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q24" value="B" data-q="24">
+          <span><b>B)</b> B) Roman 250 sayfadır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q24" value="C" data-q="24">
+          <span><b>C)</b> C) Bu şiir yazarın en etkileyici şiiridir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q24" value="D" data-q="24">
+          <span><b>D)</b> D) Toplantı saat 10.00&#039;da başladı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q24" value="E" data-q="24">
+          <span><b>E)</b> E) Sınav iki oturumdan oluşuyor.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-25" data-qno="25" data-topic="Cümlede Anlam"
+             data-answer="C"
+             data-note="“Üç saat” ölçülebilir olduğu için nesneldir."
+             data-code="NESNEL = KANITLANABİLİR"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">25. Cümlede Anlam</div>
+      <div class="question">Aşağıdakilerden hangisi nesnel bir yargıdır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q25" value="A" data-q="25">
+          <span><b>A)</b> A) Bu film çok başarılı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q25" value="B" data-q="25">
+          <span><b>B)</b> B) Şairin en güzel kitabı budur.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q25" value="C" data-q="25">
+          <span><b>C)</b> C) Toplantı üç saat sürdü.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q25" value="D" data-q="25">
+          <span><b>D)</b> D) Bu şehir çok çekici.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q25" value="E" data-q="25">
+          <span><b>E)</b> E) Roman oldukça sürükleyici.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-26" data-qno="26" data-topic="Cümlede Anlam"
+             data-answer="B"
+             data-note="“Her ne kadar... olsa da” yapısı karşıtlık/karşılaştırmalı zıtlık ilişkisi kurar."
+             data-code="HER NE KADAR ... OLSA DA = RAĞMEN/KARŞITLIK"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">26. Cümlede Anlam</div>
+      <div class="question">“Her ne kadar yorgun olsa da çalışmayı sürdürdü.” cümlesinde hangi anlam vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q26" value="A" data-q="26">
+          <span><b>A)</b> A) Koşul</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q26" value="B" data-q="26">
+          <span><b>B)</b> B) Karşıtlık</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q26" value="C" data-q="26">
+          <span><b>C)</b> C) Amaç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q26" value="D" data-q="26">
+          <span><b>D)</b> D) Neden</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q26" value="E" data-q="26">
+          <span><b>E)</b> E) Olasılık</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-27" data-qno="27" data-topic="Cümlede Anlam"
+             data-answer="B"
+             data-note="“Düşünüyorum” ifadesi kişisel görüş bildirir."
+             data-code="DÜŞÜNÜYORUM/BENCE = ÖZNEL"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">27. Cümlede Anlam</div>
+      <div class="question">“Bu kararın yanlış olduğunu düşünüyorum.” cümlesi için hangisi söylenebilir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q27" value="A" data-q="27">
+          <span><b>A)</b> A) Nesneldir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q27" value="B" data-q="27">
+          <span><b>B)</b> B) Öznel bir değerlendirmedir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q27" value="C" data-q="27">
+          <span><b>C)</b> C) Koşul bildirir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q27" value="D" data-q="27">
+          <span><b>D)</b> D) Neden-sonuç kurar.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q27" value="E" data-q="27">
+          <span><b>E)</b> E) Amaç bildirir.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-28" data-qno="28" data-topic="Cümlede Anlam"
+             data-answer="B"
+             data-note="“Soğursa” koşul, “erteleyebiliriz” olasılık/olasılık niteliği taşır."
+             data-code="BİR CÜMLEDE İKİ ANLAM BULUNABİLİR"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">28. Cümlede Anlam</div>
+      <div class="question">“Hava biraz daha soğursa maçı erteleyebiliriz.” cümlesinde hangi anlam öne çıkar?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q28" value="A" data-q="28">
+          <span><b>A)</b> A) Kesinlik</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q28" value="B" data-q="28">
+          <span><b>B)</b> B) Koşul ve olasılık</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q28" value="C" data-q="28">
+          <span><b>C)</b> C) Neden</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q28" value="D" data-q="28">
+          <span><b>D)</b> D) Amaç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q28" value="E" data-q="28">
+          <span><b>E)</b> E) Karşılaştırma</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-29" data-qno="29" data-topic="Cümlede Anlam"
+             data-answer="A"
+             data-note="“geçen yıla göre daha” ifadesi karşılaştırma yapar."
+             data-code="GÖRE + DAHA = KARŞILAŞTIRMA"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">29. Cümlede Anlam</div>
+      <div class="question">“Bu yıl geçen yıla göre daha düzenli çalışıyorum.” cümlesinde hangi anlam vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q29" value="A" data-q="29">
+          <span><b>A)</b> A) Karşılaştırma</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q29" value="B" data-q="29">
+          <span><b>B)</b> B) Neden</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q29" value="C" data-q="29">
+          <span><b>C)</b> C) Amaç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q29" value="D" data-q="29">
+          <span><b>D)</b> D) Koşul</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q29" value="E" data-q="29">
+          <span><b>E)</b> E) Varsayım</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-30" data-qno="30" data-topic="Cümlede Anlam"
+             data-answer="B"
+             data-note="Cümlenin karşılaştırma ölçütü toplantılardır."
+             data-code="KİM/KİME GÖRE? = CÜMLEDE KARŞILAŞTIRILAN İKİ UNSURU BUL"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">30. Cümlede Anlam</div>
+      <div class="question">“Bu toplantı, daha önce yaptığımız toplantılardan daha verimli geçti.” cümlesinde karşılaştırılanlar hangileridir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q30" value="A" data-q="30">
+          <span><b>A)</b> A) Toplantı ve konuşmacı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q30" value="B" data-q="30">
+          <span><b>B)</b> B) Bu toplantı ve önceki toplantılar</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q30" value="C" data-q="30">
+          <span><b>C)</b> C) Konuşmacı ve dinleyici</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q30" value="D" data-q="30">
+          <span><b>D)</b> D) Konu ve süre</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q30" value="E" data-q="30">
+          <span><b>E)</b> E) Salon ve toplantı</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-31" data-qno="31" data-topic="Cümlede Anlam"
+             data-answer="D"
+             data-note="“Bize göre” doğrudan kişisel değerlendirme bildirir."
+             data-code="BİZE GÖRE/BENCE = KİŞİSEL GÖRÜŞ"
+             data-expl="Doğru cevap D’dir.">
+      <div class="topic">31. Cümlede Anlam</div>
+      <div class="question">“Bize göre bu yöntem daha hızlı sonuç verir.” cümlesinde hangi sözcük öznel görüşü güçlendirir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q31" value="A" data-q="31">
+          <span><b>A)</b> A) yöntem</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q31" value="B" data-q="31">
+          <span><b>B)</b> B) daha</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q31" value="C" data-q="31">
+          <span><b>C)</b> C) hızlı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q31" value="D" data-q="31">
+          <span><b>D)</b> D) bize göre</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q31" value="E" data-q="31">
+          <span><b>E)</b> E) sonuç</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-32" data-qno="32" data-topic="Cümlede Anlam"
+             data-answer="D"
+             data-note="“Açıktır” sözcüğü burada kesinlik bildirir."
+             data-code="AÇIKTIR/KESİNDİR = KESİNLİK"
+             data-expl="Doğru cevap D’dir.">
+      <div class="topic">32. Cümlede Anlam</div>
+      <div class="question">“Bu davranışın doğru olmadığı açıktır.” cümlesinde aşağıdakilerden hangisi kesinlik bildirir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q32" value="A" data-q="32">
+          <span><b>A)</b> A) davranışın</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q32" value="B" data-q="32">
+          <span><b>B)</b> B) doğru</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q32" value="C" data-q="32">
+          <span><b>C)</b> C) olmadığı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q32" value="D" data-q="32">
+          <span><b>D)</b> D) açıktır</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q32" value="E" data-q="32">
+          <span><b>E)</b> E) bu</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-33" data-qno="33" data-topic="Cümlede Anlam"
+             data-answer="B"
+             data-note="“Sanırım” kesin olmayan bir düşünce, tahmin bildirir."
+             data-code="SANIRIM/GALİBA = TAHMİN"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">33. Cümlede Anlam</div>
+      <div class="question">“Sanırım toplantı yarın yapılacak.” cümlesinde hangi anlam vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q33" value="A" data-q="33">
+          <span><b>A)</b> A) Kesinlik</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q33" value="B" data-q="33">
+          <span><b>B)</b> B) Tahmin/olasılık</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q33" value="C" data-q="33">
+          <span><b>C)</b> C) Emir</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q33" value="D" data-q="33">
+          <span><b>D)</b> D) Koşul</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q33" value="E" data-q="33">
+          <span><b>E)</b> E) Amaç</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-34" data-qno="34" data-topic="Cümlede Anlam"
+             data-answer="A"
+             data-note="“Keşke” gerçekleşmemiş bir durum için dilek veya pişmanlık çağrışımı yapar."
+             data-code="KEŞKE = GERÇEKLEŞMEMİŞ DİLEK"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">34. Cümlede Anlam</div>
+      <div class="question">“Keşke daha önce haber verseydin.” cümlesinde hangi anlam vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q34" value="A" data-q="34">
+          <span><b>A)</b> A) Pişmanlık/dilek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q34" value="B" data-q="34">
+          <span><b>B)</b> B) Kesinlik</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q34" value="C" data-q="34">
+          <span><b>C)</b> C) Neden</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q34" value="D" data-q="34">
+          <span><b>D)</b> D) Karşılaştırma</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q34" value="E" data-q="34">
+          <span><b>E)</b> E) Koşul</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-35" data-qno="35" data-topic="Cümlede Anlam"
+             data-answer="A"
+             data-note="Gerçekte olmayan bir durum üzerinden olası sonuç kurulmuştur."
+             data-code="OLMAYAN DURUMU VAR SAY = VARSAYIM"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">35. Cümlede Anlam</div>
+      <div class="question">“Bu karar alınmasaydı sorun büyüyebilirdi.” cümlesinde hangi anlam ağır basar?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q35" value="A" data-q="35">
+          <span><b>A)</b> A) Varsayım</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q35" value="B" data-q="35">
+          <span><b>B)</b> B) Kesinlik</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q35" value="C" data-q="35">
+          <span><b>C)</b> C) Amaç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q35" value="D" data-q="35">
+          <span><b>D)</b> D) Neden</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q35" value="E" data-q="35">
+          <span><b>E)</b> E) Karşılaştırma</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-36" data-qno="36" data-topic="Cümlede Anlam"
+             data-answer="B"
+             data-note="“çalışsa da” ifadesi çabaya rağmen sonuç alınmadığını gösterir."
+             data-code="SA DA/SE DE = RAĞMEN"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">36. Cümlede Anlam</div>
+      <div class="question">“Ne kadar çalışsa da istediği sonucu alamadı.” cümlesinde hangi ilişki vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q36" value="A" data-q="36">
+          <span><b>A)</b> A) Amaç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q36" value="B" data-q="36">
+          <span><b>B)</b> B) Karşıtlık</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q36" value="C" data-q="36">
+          <span><b>C)</b> C) Neden</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q36" value="D" data-q="36">
+          <span><b>D)</b> D) Koşul</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q36" value="E" data-q="36">
+          <span><b>E)</b> E) Kesinlik</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-37" data-qno="37" data-topic="Cümlede Anlam"
+             data-answer="A"
+             data-note="“Çözmek üzere” yapılacak toplantının amacını belirtir."
+             data-code="ÜZERE = ÇOĞU ZAMAN AMAÇ/HAZIRLIK"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">37. Cümlede Anlam</div>
+      <div class="question">“Bu sorunu çözmek üzere ek bir toplantı yapılacak.” cümlesinde “üzere” sözcüğü hangi anlamı verir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q37" value="A" data-q="37">
+          <span><b>A)</b> A) Amaç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q37" value="B" data-q="37">
+          <span><b>B)</b> B) Neden</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q37" value="C" data-q="37">
+          <span><b>C)</b> C) Koşul</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q37" value="D" data-q="37">
+          <span><b>D)</b> D) Karşıtlık</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q37" value="E" data-q="37">
+          <span><b>E)</b> E) Olasılık</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-38" data-qno="38" data-topic="Cümlede Anlam"
+             data-answer="B"
+             data-note="Bir davranıştan önce dikkatli olunmasını istemek uyarıdır."
+             data-code="DİKKAT ET / OKU / UNUTMA = UYARI İŞARETLERİ"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">38. Cümlede Anlam</div>
+      <div class="question">Aşağıdakilerden hangisi bir uyarı cümlesidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q38" value="A" data-q="38">
+          <span><b>A)</b> A) Yarın saat sekizde yola çıkacağız.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q38" value="B" data-q="38">
+          <span><b>B)</b> B) Bu belgeyi imzalamadan önce metni dikkatle okuyun.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q38" value="C" data-q="38">
+          <span><b>C)</b> C) Toplantı iki saat sürdü.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q38" value="D" data-q="38">
+          <span><b>D)</b> D) Bu kitap çok ilgi gördü.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q38" value="E" data-q="38">
+          <span><b>E)</b> E) O, bu işi geçen hafta bitirdi.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-39" data-qno="39" data-topic="Cümlede Anlam"
+             data-answer="B"
+             data-note="Öneri, bir konuda nasıl davranılması gerektiğini tavsiye eder."
+             data-code="ÖNERİ = “BENCE ŞÖYLE YAP”"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">39. Cümlede Anlam</div>
+      <div class="question">Aşağıdakilerden hangisi öneri cümlesidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q39" value="A" data-q="39">
+          <span><b>A)</b> A) Dosyayı masaya bıraktı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q39" value="B" data-q="39">
+          <span><b>B)</b> B) Bu konuyu tekrar ederek daha iyi öğrenebilirsin.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q39" value="C" data-q="39">
+          <span><b>C)</b> C) Toplantı saat üçte başladı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q39" value="D" data-q="39">
+          <span><b>D)</b> D) Sınav yarın yapılacak.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q39" value="E" data-q="39">
+          <span><b>E)</b> E) Dün yağmur yağdı.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-40" data-qno="40" data-topic="Cümlede Anlam"
+             data-answer="A"
+             data-note="“-ince” eki burada eylemin yapılacağı zamanı bildirir."
+             data-code="İNCE/İNCE? = -İNCE EKİ ZAMAN DA BİLDİREBİLİR"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">40. Cümlede Anlam</div>
+      <div class="question">“Bu kitabı bitirince bana da ver.” cümlesinde hangi anlam ilişkisi vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q40" value="A" data-q="40">
+          <span><b>A)</b> A) Zaman ilişkisi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q40" value="B" data-q="40">
+          <span><b>B)</b> B) Neden</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q40" value="C" data-q="40">
+          <span><b>C)</b> C) Karşılaştırma</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q40" value="D" data-q="40">
+          <span><b>D)</b> D) Kesinlik</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q40" value="E" data-q="40">
+          <span><b>E)</b> E) Amaç</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-41" data-qno="41" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Parça, hızın tek başına yeterli olmadığını; anlamanın önemli olduğunu savunuyor."
+             data-code="HIZ DEĞİL → ANLAMA + BAĞLANTI"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">41. Paragraf</div>
+      <div class="question">Bir kitabı hızlı okumak, onu iyi anladığımız anlamına gelmez. Özellikle bilgi yoğun metinlerde okurun zaman zaman durup önemli noktaları belirlemesi ve metinle kendi bilgileri arasında bağlantı kurması gerekir.<br><br>Bu parçanın ana düşüncesi aşağıdakilerden hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q41" value="A" data-q="41">
+          <span><b>A)</b> A) Hızlı okuma her zaman gereklidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q41" value="B" data-q="41">
+          <span><b>B)</b> B) Bilgi yoğun metinlerde yalnızca ezber yapılmalıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q41" value="C" data-q="41">
+          <span><b>C)</b> C) Okuma hızı kadar anlama ve ilişki kurma da önemlidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q41" value="D" data-q="41">
+          <span><b>D)</b> D) Kitap okumak zaman kaybıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q41" value="E" data-q="41">
+          <span><b>E)</b> E) Her metin aynı yöntemle okunmalıdır.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-42" data-qno="42" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Kent gelişimi tek bir göstergeye indirgenemez."
+             data-code="TEK ÖLÇÜT YOK → ÇOK BOYUTLU DEĞERLENDİR"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">42. Paragraf</div>
+      <div class="question">Bir şehrin gelişmişliğini yalnızca yüksek binalar veya artan nüfus göstermeye yetmez. Ulaşım, eğitim, sağlık, çevre ve kültür olanakları birlikte değerlendirildiğinde daha sağlıklı bir tablo ortaya çıkar.<br><br>Bu parçanın ana düşüncesi nedir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q42" value="A" data-q="42">
+          <span><b>A)</b> A) Şehirlerde yüksek binalar gereksizdir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q42" value="B" data-q="42">
+          <span><b>B)</b> B) Nüfus artışı her zaman olumlu sonuç verir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q42" value="C" data-q="42">
+          <span><b>C)</b> C) Şehir gelişimi birden çok ölçüte göre değerlendirilmelidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q42" value="D" data-q="42">
+          <span><b>D)</b> D) Kültür yatırımları gereksizdir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q42" value="E" data-q="42">
+          <span><b>E)</b> E) Ulaşım her şeyden önemlidir.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-43" data-qno="43" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Araştırmanın güvenilirliğinde yöntem, kaynak ve veri değerlendirmesi öne çıkar."
+             data-code="GÜVENİLİRLİK = YÖNTEM + KAYNAK + VERİ"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">43. Paragraf</div>
+      <div class="question">Bir araştırmanın güvenilirliği, yalnızca sonuçlarının ilginç olmasına bağlı değildir. Kullanılan yöntem, kaynakların niteliği ve verilerin nasıl değerlendirildiği de sonucun güvenilirliğini belirler.<br><br>Parçada araştırmanın güvenilirliği için aşağıdakilerden hangisi vurgulanmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q43" value="A" data-q="43">
+          <span><b>A)</b> A) İlginç olması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q43" value="B" data-q="43">
+          <span><b>B)</b> B) Çok uzun olması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q43" value="C" data-q="43">
+          <span><b>C)</b> C) Yöntem ve verilerin niteliği</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q43" value="D" data-q="43">
+          <span><b>D)</b> D) Yalnızca tek kaynağa dayanması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q43" value="E" data-q="43">
+          <span><b>E)</b> E) Çok kişinin okuması</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-44" data-qno="44" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Eleştiri ölçütlü ve gerekçeli değerlendirmedir."
+             data-code="ELEŞTİRİ = KUSUR AVICILIĞI DEĞİL, GEREKÇELİ DEĞERLENDİRME"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">44. Paragraf</div>
+      <div class="question">Eleştiri, bir eseri yalnızca kötülemek için yapılmaz. İyi bir eleştiri, eserin güçlü ve zayıf yönlerini gerekçeleriyle ortaya koyar. Böylece hem yazar hem okur için geliştirici bir işlev kazanabilir.<br><br>Bu parçaya göre eleştirinin temel özelliği nedir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q44" value="A" data-q="44">
+          <span><b>A)</b> A) Yalnızca kusur bulması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q44" value="B" data-q="44">
+          <span><b>B)</b> B) Kişiyi hedef alması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q44" value="C" data-q="44">
+          <span><b>C)</b> C) Güçlü ve zayıf yönleri gerekçeli biçimde göstermesi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q44" value="D" data-q="44">
+          <span><b>D)</b> D) Eseri övmesi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q44" value="E" data-q="44">
+          <span><b>E)</b> E) Yazarı değiştirmesi</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-45" data-qno="45" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Yazar teknolojiye tamamen karşı değil; kullanım biçiminin önemini vurguluyor."
+             data-code="VAR + AMA = DENGELİ YAKLAŞIM"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">45. Paragraf</div>
+      <div class="question">Teknoloji bilgiye erişimi kolaylaştırdı; ancak aynı kolaylık dikkat dağınıklığını da artırabiliyor. Sürekli bildirim alan bir kişinin uzun süre tek bir işe yoğunlaşması zorlaşabilir. Bu nedenle teknoloji kullanımında zaman ve dikkat yönetimi önem kazanmıştır.<br><br>Parçadan aşağıdakilerden hangisi çıkarılabilir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q45" value="A" data-q="45">
+          <span><b>A)</b> A) Teknoloji yalnızca zararlıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q45" value="B" data-q="45">
+          <span><b>B)</b> B) Bildirimler her zaman faydalıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q45" value="C" data-q="45">
+          <span><b>C)</b> C) Teknolojinin yararı yanında dikkat yönetimi gerektiren bir yönü de vardır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q45" value="D" data-q="45">
+          <span><b>D)</b> D) Teknoloji kullanılmamalıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q45" value="E" data-q="45">
+          <span><b>E)</b> E) Dikkat dağınıklığı yalnızca eğitimle ilgilidir.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-46" data-qno="46" data-topic="Paragraf"
+             data-answer="B"
+             data-note="Başlık, parçanın bütününü kapsayan kısa bir ifade olmalıdır."
+             data-code="BAŞLIK = PARÇANIN ÇATISI"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">46. Paragraf</div>
+      <div class="question">Düzenli tekrar, öğrenilen bilginin uzun süreli bellekte tutulmasını kolaylaştırır. Bir konuyu yalnızca bir kez okumak yerine aralıklarla yeniden hatırlamak, bilginin kalıcılığını artırabilir.<br><br>Bu parçanın başlığı aşağıdakilerden hangisi olabilir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q46" value="A" data-q="46">
+          <span><b>A)</b> A) Unutmanın Nedenleri</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q46" value="B" data-q="46">
+          <span><b>B)</b> B) Düzenli Tekrarın Öğrenmedeki Rolü</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q46" value="C" data-q="46">
+          <span><b>C)</b> C) Kitap Okuma Hızı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q46" value="D" data-q="46">
+          <span><b>D)</b> D) Sınav Kaygısı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q46" value="E" data-q="46">
+          <span><b>E)</b> E) Teknolojinin Zararları</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-47" data-qno="47" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Ana düşünce parçanın tamamına hâkim olan temel yargıdır."
+             data-code="ANA DÜŞÜNCE = PARÇANIN TAMAMI"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">47. Paragraf</div>
+      <div class="question">Bir metinde ana düşünceyi bulmak isteyen öğrenci, yalnızca son cümleye bakmamalıdır. Giriş, gelişme ve sonuç bölümlerindeki ortak vurgular birlikte değerlendirilmelidir.<br><br>Bu parçaya göre ana düşünce bulunurken ne yapılmalıdır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q47" value="A" data-q="47">
+          <span><b>A)</b> A) Sadece son cümle okunmalıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q47" value="B" data-q="47">
+          <span><b>B)</b> B) Yalnızca başlık dikkate alınmalıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q47" value="C" data-q="47">
+          <span><b>C)</b> C) Metnin bütünü birlikte değerlendirilmelidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q47" value="D" data-q="47">
+          <span><b>D)</b> D) İlk sözcük bulunmalıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q47" value="E" data-q="47">
+          <span><b>E)</b> E) En uzun cümle seçilmelidir.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-48" data-qno="48" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Soyut hedef yerine ölçülebilir davranış öneriliyor."
+             data-code="HEDEF = SAYILABİLİYORSA TAKİP EDİLEBİLİR"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">48. Paragraf</div>
+      <div class="question">Bir hedef koymak önemlidir; fakat hedefin gerçekçi ve ölçülebilir adımlara bölünmesi, uygulama sürecini kolaylaştırır. “Daha iyi olacağım.” demek yerine “Her gün yirmi soru çözeceğim.” demek daha somut bir plandır.<br><br>Parçada özellikle ne vurgulanmaktadır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q48" value="A" data-q="48">
+          <span><b>A)</b> A) Hedeflerin gereksiz olduğu</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q48" value="B" data-q="48">
+          <span><b>B)</b> B) Her hedefin aynı olduğu</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q48" value="C" data-q="48">
+          <span><b>C)</b> C) Hedeflerin somut ve ölçülebilir hâle getirilmesi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q48" value="D" data-q="48">
+          <span><b>D)</b> D) Çalışmanın yalnızca süreye bağlı olduğu</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q48" value="E" data-q="48">
+          <span><b>E)</b> E) Plan yapmanın başarısızlık getirdiği</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-49" data-qno="49" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Popülerlik doğruluğun kanıtı değildir."
+             data-code="ÇOK PAYLAŞILDI ≠ DOĞRU"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">49. Paragraf</div>
+      <div class="question">Bir haberin çok paylaşılması onun doğru olduğunu kanıtlamaz. Bilginin doğruluğunu değerlendirmek için kaynağın güvenilirliğine, kanıtlara ve farklı kaynaklardaki bilgilerle uyumuna bakmak gerekir.<br><br>Bu parçanın ana düşüncesi nedir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q49" value="A" data-q="49">
+          <span><b>A)</b> A) Sosyal medya gereksizdir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q49" value="B" data-q="49">
+          <span><b>B)</b> B) Çok paylaşılan bilgi doğrudur.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q49" value="C" data-q="49">
+          <span><b>C)</b> C) Bilginin doğruluğu kanıt ve kaynakla değerlendirilmelidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q49" value="D" data-q="49">
+          <span><b>D)</b> D) Haberler yalnızca gazeteden okunmalıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q49" value="E" data-q="49">
+          <span><b>E)</b> E) Tek kaynak yeterlidir.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-50" data-qno="50" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Etkili anlatım, düşünceyi yeterli açıklıkta ve gereksiz tekrar olmadan vermeyi amaçlar."
+             data-code="AZ VE ÖZ; AMA YETERSİZ DEĞİL"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">50. Paragraf</div>
+      <div class="question">İyi bir anlatımda yazar, anlatmak istediği düşünce için yeterli ama gereksiz ayrıntılardan uzak bir dil kullanır. Aynı düşüncenin farklı cümlelerle tekrar edilmesi metni uzatırken anlamı güçlendirmeyebilir.<br><br>Parçaya göre etkili anlatımın özelliği nedir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q50" value="A" data-q="50">
+          <span><b>A)</b> A) Her düşünceyi beş kez tekrarlamak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q50" value="B" data-q="50">
+          <span><b>B)</b> B) Gereksiz ayrıntılar eklemek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q50" value="C" data-q="50">
+          <span><b>C)</b> C) Açık ve yeterli anlatım kullanmak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q50" value="D" data-q="50">
+          <span><b>D)</b> D) Cümleleri sürekli uzatmak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q50" value="E" data-q="50">
+          <span><b>E)</b> E) Yalnızca yabancı sözcükler kullanmak</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-51" data-qno="51" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Yazar sorgulamayı bırakmayı değil, önce anlamaya çalışmayı öneriyor."
+             data-code="ÖNCE ANLA → SONRA DEĞERLENDİR"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">51. Paragraf</div>
+      <div class="question">İnsan, alışık olmadığı bir düşünceyle karşılaştığında onu hemen reddetmek yerine dayanaklarını anlamaya çalışırsa daha sağlıklı bir değerlendirme yapabilir.<br><br>Bu cümlede asıl anlatılmak istenen nedir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q51" value="A" data-q="51">
+          <span><b>A)</b> A) Her düşünce kabul edilmelidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q51" value="B" data-q="51">
+          <span><b>B)</b> B) Farklı görüşler sorgulanmamalıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q51" value="C" data-q="51">
+          <span><b>C)</b> C) Farklı düşünceleri anlamaya çalışmak değerlendirmeyi güçlendirir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q51" value="D" data-q="51">
+          <span><b>D)</b> D) Eleştiri gereksizdir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q51" value="E" data-q="51">
+          <span><b>E)</b> E) İnsan yalnız kendi görüşünü savunmalıdır.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-52" data-qno="52" data-topic="Paragraf"
+             data-answer="D"
+             data-note="Parçada sınırsız konuşma önerilmiyor; tam tersine sürelerin dengelenmesi isteniyor."
+             data-code="ÇIKARILAMAZ = PARÇADA DESTEKLENMEYENİ BUL"
+             data-expl="Doğru cevap D’dir.">
+      <div class="topic">52. Paragraf</div>
+      <div class="question">Bir toplantının verimli olması için gündemin önceden belirlenmesi, konuşma sürelerinin dengelenmesi ve alınan kararların kayda geçirilmesi önemlidir.<br><br>Bu parçadan aşağıdakilerden hangisi çıkarılamaz?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q52" value="A" data-q="52">
+          <span><b>A)</b> A) Gündem önceden belirlenmelidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q52" value="B" data-q="52">
+          <span><b>B)</b> B) Süre yönetimi önemlidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q52" value="C" data-q="52">
+          <span><b>C)</b> C) Kararlar kaydedilmelidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q52" value="D" data-q="52">
+          <span><b>D)</b> D) Toplantıda herkes sınırsız konuşmalıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q52" value="E" data-q="52">
+          <span><b>E)</b> E) Planlama verimliliği destekler.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-53" data-qno="53" data-topic="Paragraf"
+             data-answer="B"
+             data-note="Metin giriş-gelişme-sonuç bölümlerinin işlevlerini anlatıyor."
+             data-code="GİRİŞ = KONUYA ZEMİN; GELİŞME = AYRINTI; SONUÇ = BAĞLAMA"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">53. Paragraf</div>
+      <div class="question">Bir metnin giriş bölümü çoğu zaman konuya zemin hazırlar. Gelişme bölümünde düşünceler ayrıntılandırılır, sonuç bölümünde ise temel yargı bağlanır.<br><br>Bu parçanın anlatımında aşağıdakilerden hangisine değinilmiştir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q53" value="A" data-q="53">
+          <span><b>A)</b> A) Karakter çözümlemesine</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q53" value="B" data-q="53">
+          <span><b>B)</b> B) Paragraf bölümlerinin işlevine</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q53" value="C" data-q="53">
+          <span><b>C)</b> C) Şiir türlerine</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q53" value="D" data-q="53">
+          <span><b>D)</b> D) Söz sanatlarına</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q53" value="E" data-q="53">
+          <span><b>E)</b> E) Yazım kurallarına</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-54" data-qno="54" data-topic="Paragraf"
+             data-answer="B"
+             data-note="Parça okumanın düşünsel gelişimini vurguluyor."
+             data-code="OKUMA = KELİME + BAKIŞ AÇISI"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">54. Paragraf</div>
+      <div class="question">Okuma alışkanlığı yalnızca kelime bilgisini artırmaz; farklı bakış açılarıyla karşılaşmayı da sağlar. Böylece kişi kendi düşüncelerini yeniden değerlendirebilir.<br><br>Bu parçaya göre okumanın hangi yönü vurgulanmaktadır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q54" value="A" data-q="54">
+          <span><b>A)</b> A) Sadece kelime ezberletmesi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q54" value="B" data-q="54">
+          <span><b>B)</b> B) Düşünsel bakışı geliştirmesi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q54" value="C" data-q="54">
+          <span><b>C)</b> C) Zaman kaybettirmesi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q54" value="D" data-q="54">
+          <span><b>D)</b> D) Yalnız sınav başarısı sağlaması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q54" value="E" data-q="54">
+          <span><b>E)</b> E) Yalnızca edebiyat öğretmesi</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-55" data-qno="55" data-topic="Paragraf"
+             data-answer="B"
+             data-note="Bilginin yanında kullanma becerisi de vurgulanıyor."
+             data-code="BİLGİ + KULLANMA = GERÇEK YETERLİLİK"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">55. Paragraf</div>
+      <div class="question">Bir kişinin çok bilgiye sahip olması, bu bilgiyi doğru kullanacağı anlamına gelmez. Bilginin yanında yorumlama ve uygulama becerisi de gerekir.<br><br>Parçanın ana düşüncesi hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q55" value="A" data-q="55">
+          <span><b>A)</b> A) Bilgi gereksizdir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q55" value="B" data-q="55">
+          <span><b>B)</b> B) Bilgi tek başına yeterli olmayabilir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q55" value="C" data-q="55">
+          <span><b>C)</b> C) Yorumlama gereksizdir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q55" value="D" data-q="55">
+          <span><b>D)</b> D) Uygulama zaman kaybıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q55" value="E" data-q="55">
+          <span><b>E)</b> E) Bilgi yalnız kitaplardan öğrenilir.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-56" data-qno="56" data-topic="Paragraf"
+             data-answer="B"
+             data-note="Uygulanabilirlik için kaynak ve zaman gerçekçi olmalıdır."
+             data-code="PLAN = AYRINTI DEĞİL, UYGULANABİLİRLİK"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">56. Paragraf</div>
+      <div class="question">Bir planın çok ayrıntılı olması, onun mutlaka uygulanabilir olduğu anlamına gelmez. Planın zaman, insan ve bütçe açısından gerçekçi olması gerekir.<br><br>Parçaya göre iyi bir planın hangi özelliği öne çıkmaktadır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q56" value="A" data-q="56">
+          <span><b>A)</b> A) Çok uzun olması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q56" value="B" data-q="56">
+          <span><b>B)</b> B) Gerçekçi olması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q56" value="C" data-q="56">
+          <span><b>C)</b> C) Çok renkli olması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q56" value="D" data-q="56">
+          <span><b>D)</b> D) Gizli olması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q56" value="E" data-q="56">
+          <span><b>E)</b> E) Sadece ayrıntılı olması</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-57" data-qno="57" data-topic="Paragraf"
+             data-answer="B"
+             data-note="Kaynaklar arası karşılaştırma öneriliyor."
+             data-code="ARAŞTIRMA = TEK KAYNAK DEĞİL, KARŞILAŞTIRMA"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">57. Paragraf</div>
+      <div class="question">Bir araştırmada tek kaynağa bağlı kalmak yerine farklı güvenilir kaynakların karşılaştırılması, ulaşılan sonucun sağlamlığını artırabilir.<br><br>Bu parçada hangi yöntem önerilmektedir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q57" value="A" data-q="57">
+          <span><b>A)</b> A) Tek kaynağa bağlı kalmak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q57" value="B" data-q="57">
+          <span><b>B)</b> B) Kaynakları karşılaştırmak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q57" value="C" data-q="57">
+          <span><b>C)</b> C) Kaynakları önemsememek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q57" value="D" data-q="57">
+          <span><b>D)</b> D) Yalnız sosyal medya kullanmak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q57" value="E" data-q="57">
+          <span><b>E)</b> E) Kanıt aramamak</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-58" data-qno="58" data-topic="Paragraf"
+             data-answer="B"
+             data-note="Başlık kısa olmalı ve ana düşünceyi yansıtmalıdır."
+             data-code="BAŞLIK = ANA DÜŞÜNCENİN KISA ADI"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">58. Paragraf</div>
+      <div class="question">Bir yazının başlığı, metinde ayrıntılarıyla açıklanan düşünceyi kısa biçimde yansıtmalıdır.<br><br>Bu cümleye göre iyi bir başlığın temel özelliği nedir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q58" value="A" data-q="58">
+          <span><b>A)</b> A) Uzun olması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q58" value="B" data-q="58">
+          <span><b>B)</b> B) Metnin ana düşüncesini yansıtması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q58" value="C" data-q="58">
+          <span><b>C)</b> C) Yabancı kelimeler içermesi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q58" value="D" data-q="58">
+          <span><b>D)</b> D) Okuru şaşırtması</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q58" value="E" data-q="58">
+          <span><b>E)</b> E) Her ayrıntıyı tek tek sayması</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-59" data-qno="59" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Doğruluğun ölçütü ses değil, gerekçe ve kanıttır."
+             data-code="SES DEĞİL, KANIT"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">59. Paragraf</div>
+      <div class="question">Bir tartışmada yüksek sesle konuşmak, görüşün doğru olduğunu göstermez. Bir görüşü güçlü kılan şey, gerekçe ve kanıtlarla desteklenmesidir.<br><br>Bu parçanın ana düşüncesi hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q59" value="A" data-q="59">
+          <span><b>A)</b> A) Yüksek ses her zaman etkilidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q59" value="B" data-q="59">
+          <span><b>B)</b> B) Doğruluk ses tonuna bağlıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q59" value="C" data-q="59">
+          <span><b>C)</b> C) Görüşlerin gücü gerekçe ve kanıtla ilişkilidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q59" value="D" data-q="59">
+          <span><b>D)</b> D) Tartışma gereksizdir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q59" value="E" data-q="59">
+          <span><b>E)</b> E) Kanıt kullanmak zayıflıktır.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-60" data-qno="60" data-topic="Paragraf"
+             data-answer="B"
+             data-note="Uyku ile dikkat/öğrenme arasında ilişki kuruluyor."
+             data-code="UYKU → DİKKAT → ÖĞRENME"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">60. Paragraf</div>
+      <div class="question">Düzenli uyku, dikkat ve öğrenme süreçlerini destekleyen temel alışkanlıklardandır. Yeterli dinlenme, özellikle zihinsel yoğunluğu yüksek işlerde performansı olumlu etkileyebilir.<br><br>Bu parçada aşağıdakilerden hangisi vurgulanmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q60" value="A" data-q="60">
+          <span><b>A)</b> A) Uykunun gereksiz olduğu</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q60" value="B" data-q="60">
+          <span><b>B)</b> B) Uykunun zihinsel performansla ilişkili olduğu</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q60" value="C" data-q="60">
+          <span><b>C)</b> C) Sınavların uykuya bağlı olmadığı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q60" value="D" data-q="60">
+          <span><b>D)</b> D) Herkesin aynı kadar uyuması gerektiği</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q60" value="E" data-q="60">
+          <span><b>E)</b> E) Uykunun yalnızca fiziksel olduğu</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-61" data-qno="61" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Parça hız ile doğruluğun birlikte düşünülmesi gerektiğini savunuyor."
+             data-code="HIZ + DOĞRULUK = VERİMLİLİK"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">61. Paragraf</div>
+      <div class="question">Bir kişinin işini hızlı yapması kadar doğru yapması da önemlidir. Hız, doğrulukla desteklenmediğinde hata sayısını artırabilir.<br><br>Bu parçanın ana düşüncesi hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q61" value="A" data-q="61">
+          <span><b>A)</b> A) Hız her şeydir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q61" value="B" data-q="61">
+          <span><b>B)</b> B) Doğruluk gereksizdir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q61" value="C" data-q="61">
+          <span><b>C)</b> C) Hız ve doğruluk dengeli olmalıdır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q61" value="D" data-q="61">
+          <span><b>D)</b> D) Yavaş çalışmak her zaman doğrudur.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q61" value="E" data-q="61">
+          <span><b>E)</b> E) Hata yapmak önemsizdir.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-62" data-qno="62" data-topic="Paragraf"
+             data-answer="B"
+             data-note="Dolaylı anlatımlar çıkarım yapma becerisini gerektirir."
+             data-code="DOĞRUDAN YAZMIYORSA → ÇIKARIM ARA"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">62. Paragraf</div>
+      <div class="question">Bir metinde bazı düşünceler doğrudan, bazıları ise örnekler ve sonuçlar üzerinden dolaylı olarak verilebilir.<br><br>Bu parçaya göre okurun hangi becerisi önem kazanır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q62" value="A" data-q="62">
+          <span><b>A)</b> A) Yalnızca kelime saymak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q62" value="B" data-q="62">
+          <span><b>B)</b> B) Çıkarım yapmak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q62" value="C" data-q="62">
+          <span><b>C)</b> C) Noktalama saymak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q62" value="D" data-q="62">
+          <span><b>D)</b> D) Başlığı ezberlemek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q62" value="E" data-q="62">
+          <span><b>E)</b> E) Cümleleri uzatmak</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-63" data-qno="63" data-topic="Paragraf"
+             data-answer="B"
+             data-note="Parça trafik dışında enerji ve hava kirliliğine de değiniyor."
+             data-code="BİRDEN FAZLA SONUÇ = ÇOK YÖNLÜ ETKİ"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">63. Paragraf</div>
+      <div class="question">Kentlerde toplu taşımanın geliştirilmesi trafik yoğunluğunu azaltabilir; enerji tüketimi ve hava kirliliği üzerinde de olumlu etkiler yaratabilir.<br><br>Bu parçadan aşağıdakilerden hangisi çıkarılabilir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q63" value="A" data-q="63">
+          <span><b>A)</b> A) Toplu taşıma yalnızca trafiği etkiler.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q63" value="B" data-q="63">
+          <span><b>B)</b> B) Toplu taşımanın birden fazla yararı olabilir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q63" value="C" data-q="63">
+          <span><b>C)</b> C) Toplu taşıma gereksizdir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q63" value="D" data-q="63">
+          <span><b>D)</b> D) Hava kirliliği ulaşımla ilgili değildir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q63" value="E" data-q="63">
+          <span><b>E)</b> E) Bireysel araç kullanımı her zaman daha iyidir.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-64" data-qno="64" data-topic="Paragraf"
+             data-answer="B"
+             data-note="Hedefe ilerlemeyi görmek için ölçülebilir göstergeler gereklidir."
+             data-code="HEDEF + ÖLÇÜM = TAKİP"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">64. Paragraf</div>
+      <div class="question">Bir hedef belirlemek kadar o hedefe ne kadar yaklaşıldığını ölçmek de önemlidir.<br><br>Bu cümlede hangisi vurgulanmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q64" value="A" data-q="64">
+          <span><b>A)</b> A) Hedef belirlemek gereksizdir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q64" value="B" data-q="64">
+          <span><b>B)</b> B) İlerlemenin ölçülmesi önemlidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q64" value="C" data-q="64">
+          <span><b>C)</b> C) Hedefler her zaman değişmelidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q64" value="D" data-q="64">
+          <span><b>D)</b> D) Ölçme sadece sınavda yapılır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q64" value="E" data-q="64">
+          <span><b>E)</b> E) Planlamaya gerek yoktur.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-65" data-qno="65" data-topic="Paragraf"
+             data-answer="A"
+             data-note="Yardımcı düşünceler ana düşüncenin açıklama ve kanıtlarını oluşturur."
+             data-code="ANA DÜŞÜNCEYİ TAŞIYANLAR = YARDIMCI DÜŞÜNCELER"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">65. Paragraf</div>
+      <div class="question">Bir metnin yardımcı düşünceleri, ana düşünceyi açıklayan veya destekleyen ayrıntılardır.<br><br>Yardımcı düşüncelerin temel işlevi hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q65" value="A" data-q="65">
+          <span><b>A)</b> A) Ana düşünceyi desteklemek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q65" value="B" data-q="65">
+          <span><b>B)</b> B) Konuyu değiştirmek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q65" value="C" data-q="65">
+          <span><b>C)</b> C) Başlığı uzatmak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q65" value="D" data-q="65">
+          <span><b>D)</b> D) Metni bitirmek</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q65" value="E" data-q="65">
+          <span><b>E)</b> E) Yazarın adını vermek</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-66" data-qno="66" data-topic="Dil Bilgisi"
+             data-answer="B"
+             data-note="“Güzel” isim soylu sözcük olup cümlede yüklem görevindedir."
+             data-code="İSİM CÜMLESİ = YÜKLEM İSİM/SIFAT/ZAMİR"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">66. Dil Bilgisi</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde yüklem bir isim soylu sözcüktür?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q66" value="A" data-q="66">
+          <span><b>A)</b> A) Çocuk bahçede koştu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q66" value="B" data-q="66">
+          <span><b>B)</b> B) Bu kitap çok güzel.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q66" value="C" data-q="66">
+          <span><b>C)</b> C) Öğrenciler sınava çalıştı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q66" value="D" data-q="66">
+          <span><b>D)</b> D) Toplantı erken başladı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q66" value="E" data-q="66">
+          <span><b>E)</b> E) Kuşlar uçtu.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-67" data-qno="67" data-topic="Dil Bilgisi"
+             data-answer="C"
+             data-note="“Çocuk” eylemi yapan açık öznedir."
+             data-code="ÖZNE = YAPAN / OLAN"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">67. Dil Bilgisi</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde özne açıkça bellidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q67" value="A" data-q="67">
+          <span><b>A)</b> A) Sabah erken kalkıldı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q67" value="B" data-q="67">
+          <span><b>B)</b> B) Akşam toplantı yapıldı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q67" value="C" data-q="67">
+          <span><b>C)</b> C) Çocuk kitabı okudu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q67" value="D" data-q="67">
+          <span><b>D)</b> D) Bu konuda konuşuldu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q67" value="E" data-q="67">
+          <span><b>E)</b> E) Kapı açıldı.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-68" data-qno="68" data-topic="Dil Bilgisi"
+             data-answer="B"
+             data-note="“Kitabı” -i hâl eki aldığı için belirtili nesnedir."
+             data-code="NESNE = KİMİ? NEYİ?"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">68. Dil Bilgisi</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde belirtili nesne vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q68" value="A" data-q="68">
+          <span><b>A)</b> A) Öğrenci kitap okudu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q68" value="B" data-q="68">
+          <span><b>B)</b> B) Öğrenci kitabı okudu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q68" value="C" data-q="68">
+          <span><b>C)</b> C) Öğrenci okulda çalıştı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q68" value="D" data-q="68">
+          <span><b>D)</b> D) Öğrenci sabah geldi.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q68" value="E" data-q="68">
+          <span><b>E)</b> E) Öğrenci arkadaşına seslendi.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-69" data-qno="69" data-topic="Dil Bilgisi"
+             data-answer="B"
+             data-note="“Onlar” isim yerine geçen kişi zamiridir."
+             data-code="ZAMİR = İSMİN YERİNE GEÇER"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">69. Dil Bilgisi</div>
+      <div class="question">Aşağıdaki sözcüklerden hangisi zamirdir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q69" value="A" data-q="69">
+          <span><b>A)</b> A) Güzel</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q69" value="B" data-q="69">
+          <span><b>B)</b> B) Onlar</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q69" value="C" data-q="69">
+          <span><b>C)</b> C) Çalışkan</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q69" value="D" data-q="69">
+          <span><b>D)</b> D) Üç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q69" value="E" data-q="69">
+          <span><b>E)</b> E) Koşarak</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-70" data-qno="70" data-topic="Dil Bilgisi"
+             data-answer="C"
+             data-note="“Koşarak” zarf-fiildir."
+             data-code="FİİLİMSİ = FİİLDEN TÜRE, ÇEKİMLİ FİİL OLMA"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">70. Dil Bilgisi</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde fiilimsi vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q70" value="A" data-q="70">
+          <span><b>A)</b> A) Çocuk koştu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q70" value="B" data-q="70">
+          <span><b>B)</b> B) Kitap masada.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q70" value="C" data-q="70">
+          <span><b>C)</b> C) Koşarak eve geldi.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q70" value="D" data-q="70">
+          <span><b>D)</b> D) Hava soğuk.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q70" value="E" data-q="70">
+          <span><b>E)</b> E) Kuşlar uçtu.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-71" data-qno="71" data-topic="Dil Bilgisi"
+             data-answer="B"
+             data-note="“Hızlı” bir ismi nitelediğinde sıfattır."
+             data-code="SIFAT = İSMİ NİTELER/BELİRTİR"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">71. Dil Bilgisi</div>
+      <div class="question">Aşağıdaki sözcüklerden hangisi sıfattır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q71" value="A" data-q="71">
+          <span><b>A)</b> A) Kitap</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q71" value="B" data-q="71">
+          <span><b>B)</b> B) Hızlı</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q71" value="C" data-q="71">
+          <span><b>C)</b> C) Onlar</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q71" value="D" data-q="71">
+          <span><b>D)</b> D) Koşarak</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q71" value="E" data-q="71">
+          <span><b>E)</b> E) Ve</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-72" data-qno="72" data-topic="Dil Bilgisi"
+             data-answer="B"
+             data-note="“Çalışkan” öğrenciyi nitelediği için sıfattır."
+             data-code="İSMİ NİTELİYORSA = SIFAT"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">72. Dil Bilgisi</div>
+      <div class="question">“Çalışkan öğrenci soruları hızlıca çözdü.” cümlesinde “çalışkan” sözcüğünün türü nedir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q72" value="A" data-q="72">
+          <span><b>A)</b> A) Zamir</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q72" value="B" data-q="72">
+          <span><b>B)</b> B) Sıfat</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q72" value="C" data-q="72">
+          <span><b>C)</b> C) Zarf</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q72" value="D" data-q="72">
+          <span><b>D)</b> D) Bağlaç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q72" value="E" data-q="72">
+          <span><b>E)</b> E) Edat</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-73" data-qno="73" data-topic="Dil Bilgisi"
+             data-answer="B"
+             data-note="“Çok” burada “çalıştım” fiilini miktar bakımından belirtir."
+             data-code="FİİLİ BELİRTİYORSA = ZARF"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">73. Dil Bilgisi</div>
+      <div class="question">“Bugün çok çalıştım.” cümlesinde “çok” sözcüğünün görevi nedir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q73" value="A" data-q="73">
+          <span><b>A)</b> A) Sıfat</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q73" value="B" data-q="73">
+          <span><b>B)</b> B) Zarf</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q73" value="C" data-q="73">
+          <span><b>C)</b> C) Zamir</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q73" value="D" data-q="73">
+          <span><b>D)</b> D) Bağlaç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q73" value="E" data-q="73">
+          <span><b>E)</b> E) Ünlem</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-74" data-qno="74" data-topic="Dil Bilgisi"
+             data-answer="C"
+             data-note="“Ben de” ifadesindeki “de” bağlaçtır ve ayrı yazılır."
+             data-code="DE ÇIKAR → CÜMLE AYAKTA KALIYORSA BAĞLAÇ"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">74. Dil Bilgisi</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde “de” bağlaçtır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q74" value="A" data-q="74">
+          <span><b>A)</b> A) Evde kimse yoktu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q74" value="B" data-q="74">
+          <span><b>B)</b> B) Kitapta önemli bilgiler var.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q74" value="C" data-q="74">
+          <span><b>C)</b> C) Ben de sizinle geleceğim.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q74" value="D" data-q="74">
+          <span><b>D)</b> D) Masada kalem duruyor.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q74" value="E" data-q="74">
+          <span><b>E)</b> E) Çantada defter var.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-75" data-qno="75" data-topic="Yazım"
+             data-answer="D"
+             data-note="“Birkaç” bitişik yazılır; “her şey” ve “pek çok” ayrı yazılır."
+             data-code="BİRKAÇ = BİTİŞİK; HER ŞEY = AYRI; PEK ÇOK = AYRI"
+             data-expl="Doğru cevap D’dir.">
+      <div class="topic">75. Yazım</div>
+      <div class="question">Aşağıdakilerden hangisinin yazımı doğrudur?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q75" value="A" data-q="75">
+          <span><b>A)</b> A) herşey</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q75" value="B" data-q="75">
+          <span><b>B)</b> B) hiç bir</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q75" value="C" data-q="75">
+          <span><b>C)</b> C) bir çok</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q75" value="D" data-q="75">
+          <span><b>D)</b> D) birkaç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q75" value="E" data-q="75">
+          <span><b>E)</b> E) pekçok</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-76" data-qno="76" data-topic="Yazım"
+             data-answer="B"
+             data-note="“Hiçbir” belgisiz sıfatı bitişik yazılır."
+             data-code="HİÇBİR = BİTİŞİK"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">76. Yazım</div>
+      <div class="question">Aşağıdakilerden hangisinin yazımı doğrudur?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q76" value="A" data-q="76">
+          <span><b>A)</b> A) hiç bir</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q76" value="B" data-q="76">
+          <span><b>B)</b> B) hiçbir</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q76" value="C" data-q="76">
+          <span><b>C)</b> C) hiçbir</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q76" value="D" data-q="76">
+          <span><b>D)</b> D) hiç-bir</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q76" value="E" data-q="76">
+          <span><b>E)</b> E) hi çbir</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-77" data-qno="77" data-topic="Yazım"
+             data-answer="B"
+             data-note="Bağlaç olan “de/da” ayrı yazılır."
+             data-code="BAĞLAÇ DE/DA = AYRI"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">77. Yazım</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde “de”nin yazımı doğrudur?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q77" value="A" data-q="77">
+          <span><b>A)</b> A) Benimde haberim var.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q77" value="B" data-q="77">
+          <span><b>B)</b> B) Sen de gel.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q77" value="C" data-q="77">
+          <span><b>C)</b> C) Ev de kimse yok.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q77" value="D" data-q="77">
+          <span><b>D)</b> D) Kitabın da ki notlar önemli.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q77" value="E" data-q="77">
+          <span><b>E)</b> E) Oda bizimle geldi.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-78" data-qno="78" data-topic="Yazım"
+             data-answer="A"
+             data-note="Bağlaç olan “ki” ayrı yazılır; “Duydum ki” doğrudur."
+             data-code="BAĞLAÇ Kİ = AYRI; KALIPLAŞMIŞLARDA BİTİŞİK"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">78. Yazım</div>
+      <div class="question">Aşağıdakilerin hangisinde “ki” doğru yazılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q78" value="A" data-q="78">
+          <span><b>A)</b> A) Duydum ki yarın geliyorsun.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q78" value="B" data-q="78">
+          <span><b>B)</b> B) evdeki ki kitap</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q78" value="C" data-q="78">
+          <span><b>C)</b> C) benimki deki</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q78" value="D" data-q="78">
+          <span><b>D)</b> D) madem ki</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q78" value="E" data-q="78">
+          <span><b>E)</b> E) oysa ki</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-79" data-qno="79" data-topic="Yazım"
+             data-answer="B"
+             data-note="Soru edatı “mi” ayrı yazılır."
+             data-code="Mİ = AYRI"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">79. Yazım</div>
+      <div class="question">Aşağıdakilerden hangisinde “mi” soru edatı doğru yazılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q79" value="A" data-q="79">
+          <span><b>A)</b> A) Geldinmi?</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q79" value="B" data-q="79">
+          <span><b>B)</b> B) Geldin mi?</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q79" value="C" data-q="79">
+          <span><b>C)</b> C) Geldinmi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q79" value="D" data-q="79">
+          <span><b>D)</b> D) Geldin mi</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q79" value="E" data-q="79">
+          <span><b>E)</b> E) Geldin-mİ?</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-80" data-qno="80" data-topic="Noktalama"
+             data-answer="C"
+             data-note="Doğrudan soru bildiren cümle soru işaretiyle biter."
+             data-code="SORU = ?"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">80. Noktalama</div>
+      <div class="question">Soru cümlesinin sonunda hangi işaret kullanılır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q80" value="A" data-q="80">
+          <span><b>A)</b> A) Nokta</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q80" value="B" data-q="80">
+          <span><b>B)</b> B) Virgül</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q80" value="C" data-q="80">
+          <span><b>C)</b> C) Soru işareti</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q80" value="D" data-q="80">
+          <span><b>D)</b> D) Noktalı virgül</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q80" value="E" data-q="80">
+          <span><b>E)</b> E) İki nokta</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-81" data-qno="81" data-topic="Noktalama"
+             data-answer="C"
+             data-note="Sıralı cümleler arasında virgül kullanılabilir."
+             data-code="VİRGÜL = SIRALI CÜMLELERİ DE AYIRIR"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">81. Noktalama</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde virgül doğru kullanılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q81" value="A" data-q="81">
+          <span><b>A)</b> A) Ankara, Türkiye&#039;nin başkentidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q81" value="B" data-q="81">
+          <span><b>B)</b> B) Ali, ve Ayşe geldi.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q81" value="C" data-q="81">
+          <span><b>C)</b> C) Kitabı aldı, eve gitti.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q81" value="D" data-q="81">
+          <span><b>D)</b> D) Sabah, erken kalktım.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q81" value="E" data-q="81">
+          <span><b>E)</b> E) Çünkü, hava yağmurluydu.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-82" data-qno="82" data-topic="Noktalama"
+             data-answer="A"
+             data-note="Açıklama veya örnekleme öncesinde iki nokta kullanılabilir."
+             data-code="İKİ NOKTA = ŞİMDİ AÇIKLAYACAĞIM"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">82. Noktalama</div>
+      <div class="question">Aşağıdakilerden hangisinde iki nokta doğru kullanılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q82" value="A" data-q="82">
+          <span><b>A)</b> A) Çantamda üç şey var: kitap, kalem ve defter.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q82" value="B" data-q="82">
+          <span><b>B)</b> B) Eve gittim: sonra uyudum.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q82" value="C" data-q="82">
+          <span><b>C)</b> C) Çünkü: yağmur yağdı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q82" value="D" data-q="82">
+          <span><b>D)</b> D) Ankara: Türkiye&#039;nin başkentidir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q82" value="E" data-q="82">
+          <span><b>E)</b> E) Sabah: erken kalktım.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-83" data-qno="83" data-topic="Dil Bilgisi"
+             data-answer="C"
+             data-note="“-arak/-erek” zarf-fiil ekidir."
+             data-code="ARAK/EREK = ZARF-FİİL"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">83. Dil Bilgisi</div>
+      <div class="question">“Koşarak sınıfa girdi.” cümlesinde “koşarak” hangi fiilimsi türüdür?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q83" value="A" data-q="83">
+          <span><b>A)</b> A) İsim-fiil</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q83" value="B" data-q="83">
+          <span><b>B)</b> B) Sıfat-fiil</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q83" value="C" data-q="83">
+          <span><b>C)</b> C) Zarf-fiil</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q83" value="D" data-q="83">
+          <span><b>D)</b> D) Çekimli fiil</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q83" value="E" data-q="83">
+          <span><b>E)</b> E) Ek-fiil</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-84" data-qno="84" data-topic="Dil Bilgisi"
+             data-answer="B"
+             data-note="“Gelecek” bir ismi nitelediği için sıfat-fiildir."
+             data-code="ANLAMIYLA İSMİ NİTELİYORSA = SIFAT-FİİL"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">84. Dil Bilgisi</div>
+      <div class="question">“Gelecek günleri düşündü.” cümlesinde “gelecek” sözcüğü hangi türdedir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q84" value="A" data-q="84">
+          <span><b>A)</b> A) İsim-fiil</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q84" value="B" data-q="84">
+          <span><b>B)</b> B) Sıfat-fiil</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q84" value="C" data-q="84">
+          <span><b>C)</b> C) Zarf-fiil</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q84" value="D" data-q="84">
+          <span><b>D)</b> D) Zarf</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q84" value="E" data-q="84">
+          <span><b>E)</b> E) Zamir</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-85" data-qno="85" data-topic="Dil Bilgisi"
+             data-answer="A"
+             data-note="“-mek/-mak” isim-fiil ekidir."
+             data-code="MAK/MEK = İSİM-FİİL"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">85. Dil Bilgisi</div>
+      <div class="question">“Yüzmek sağlıklıdır.” cümlesinde “yüzmek” hangi fiilimsi türüdür?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q85" value="A" data-q="85">
+          <span><b>A)</b> A) İsim-fiil</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q85" value="B" data-q="85">
+          <span><b>B)</b> B) Sıfat-fiil</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q85" value="C" data-q="85">
+          <span><b>C)</b> C) Zarf-fiil</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q85" value="D" data-q="85">
+          <span><b>D)</b> D) Çekimli fiil</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q85" value="E" data-q="85">
+          <span><b>E)</b> E) Bağlaç</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-86" data-qno="86" data-topic="Anlatım Bozukluğu"
+             data-answer="A"
+             data-note="“Tekrar” ve “yeniden” aynı anlamı taşıdığı için birlikte gereksizdir."
+             data-code="AYNI ANLAMLI SÖZLERİ YAN YANA GETİRME"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">86. Anlatım Bozukluğu</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde gereksiz sözcük kullanımı vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q86" value="A" data-q="86">
+          <span><b>A)</b> A) Bu konuyu tekrar yeniden konuşuruz.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q86" value="B" data-q="86">
+          <span><b>B)</b> B) Yarın erkenden yola çıkacağız.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q86" value="C" data-q="86">
+          <span><b>C)</b> C) Kitabı dikkatle okudu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q86" value="D" data-q="86">
+          <span><b>D)</b> D) Soruları hızlı çözdü.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q86" value="E" data-q="86">
+          <span><b>E)</b> E) Toplantı saat dokuzda başladı.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-87" data-qno="87" data-topic="Anlatım Bozukluğu"
+             data-answer="A"
+             data-note="“Kesinlikle” kesinlik, “belki” olasılık bildirir; birlikte kullanımları anlamca çelişir."
+             data-code="KESİNLİK ≠ OLASILIK"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">87. Anlatım Bozukluğu</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde anlamca çelişen sözler birlikte kullanılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q87" value="A" data-q="87">
+          <span><b>A)</b> A) Kesinlikle belki yarın gelir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q87" value="B" data-q="87">
+          <span><b>B)</b> B) Yarın mutlaka geleceğiz.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q87" value="C" data-q="87">
+          <span><b>C)</b> C) Bu işi kolayca bitirdiler.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q87" value="D" data-q="87">
+          <span><b>D)</b> D) Toplantı erken başladı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q87" value="E" data-q="87">
+          <span><b>E)</b> E) Kitabı dikkatle okudu.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-88" data-qno="88" data-topic="Anlatım Bozukluğu"
+             data-answer="E"
+             data-note="Cümle anlatım açısından düzgündür; seçeneklerdeki belirgin bozuklukların hiçbiri yoktur."
+             data-code="ÖNCE BOZUKLUK VAR MI? SONRA TÜRÜNÜ ARA"
+             data-expl="Doğru cevap E’dir.">
+      <div class="topic">88. Anlatım Bozukluğu</div>
+      <div class="question">“Bu karar hem çalışanları hem de yöneticileri memnun etmedi.” cümlesi için hangisi doğrudur?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q88" value="A" data-q="88">
+          <span><b>A)</b> A) Gereksiz sözcük vardır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q88" value="B" data-q="88">
+          <span><b>B)</b> B) Özne-yüklem uyuşmazlığı vardır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q88" value="C" data-q="88">
+          <span><b>C)</b> C) Mantık hatası vardır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q88" value="D" data-q="88">
+          <span><b>D)</b> D) Tamlama yanlışı vardır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q88" value="E" data-q="88">
+          <span><b>E)</b> E) Belirgin bir anlatım bozukluğu yoktur.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-89" data-qno="89" data-topic="Anlatım Bozukluğu"
+             data-answer="C"
+             data-note="“İnsanların çoğu” ile “destekliyorlar” kullanımı sınav Türkçesinde uyumsuz kabul edilir; doğru kullanım “çoğu ... destekliyor”dur."
+             data-code="ÇOĞU/BİRÇOK/HEPSİ = YÜKLEMİ KONTROL ET"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">89. Anlatım Bozukluğu</div>
+      <div class="question">Aşağıdakilerden hangisinde özne-yüklem uyuşmazlığı vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q89" value="A" data-q="89">
+          <span><b>A)</b> A) Öğrenciler sınıfa girdi.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q89" value="B" data-q="89">
+          <span><b>B)</b> B) Çocuklar bahçede oynuyor.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q89" value="C" data-q="89">
+          <span><b>C)</b> C) İnsanların çoğu bu düşünceyi destekliyorlar.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q89" value="D" data-q="89">
+          <span><b>D)</b> D) Kuşlar gökyüzünde uçuyor.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q89" value="E" data-q="89">
+          <span><b>E)</b> E) Takım sahaya çıktı.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-90" data-qno="90" data-topic="Noktalama"
+             data-answer="B"
+             data-note="Özel ada gelen çekim eki kesme işaretiyle ayrılır."
+             data-code="ÖZEL ADA EK = KESME"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">90. Noktalama</div>
+      <div class="question">Aşağıdakilerden hangisinde özel ada gelen ek doğru yazılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q90" value="A" data-q="90">
+          <span><b>A)</b> A) Ankara da</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q90" value="B" data-q="90">
+          <span><b>B)</b> B) Ankara&#039;da</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q90" value="C" data-q="90">
+          <span><b>C)</b> C) Ankara da,</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q90" value="D" data-q="90">
+          <span><b>D)</b> D) Ankarada</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q90" value="E" data-q="90">
+          <span><b>E)</b> E) Ankara-&#039;da</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-91" data-qno="91" data-topic="Yazım"
+             data-answer="B"
+             data-note="“Olağanüstü” birleşik yazılır."
+             data-code="KALIPLAŞMIŞ BİRLEŞİK SÖZCÜĞÜ SÖZLÜKTE KONTROL ET"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">91. Yazım</div>
+      <div class="question">Aşağıdakilerden hangisinin yazımı doğrudur?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q91" value="A" data-q="91">
+          <span><b>A)</b> A) olağan üstü</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q91" value="B" data-q="91">
+          <span><b>B)</b> B) olağanüstü</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q91" value="C" data-q="91">
+          <span><b>C)</b> C) olağan-üstü</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q91" value="D" data-q="91">
+          <span><b>D)</b> D) olağan üstü̈</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q91" value="E" data-q="91">
+          <span><b>E)</b> E) olağ anüstü</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-92" data-qno="92" data-topic="Noktalama"
+             data-answer="C"
+             data-note="Karşılıklı konuşmalarda satır başında uzun çizgi kullanılabilir."
+             data-code="KONUŞMA = UZUN ÇİZGİ"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">92. Noktalama</div>
+      <div class="question">Aşağıdakilerden hangisinde konuşma çizgisi doğru kullanılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q92" value="A" data-q="92">
+          <span><b>A)</b> A) -Nereye gidiyorsun? -Okula.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q92" value="B" data-q="92">
+          <span><b>B)</b> B) “Nereye gidiyorsun?” dedi.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q92" value="C" data-q="92">
+          <span><b>C)</b> C) —Nereye gidiyorsun? —Okula.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q92" value="D" data-q="92">
+          <span><b>D)</b> D) Nereye gidiyorsun? —Okula.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q92" value="E" data-q="92">
+          <span><b>E)</b> E) Nereye gidiyorsun — Okula.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-93" data-qno="93" data-topic="Dil Bilgisi"
+             data-answer="A"
+             data-note="“Gibi” benzetme/karşılaştırma ilişkisi kuran edattır."
+             data-code="GİBİ/İÇİN/KADAR/GÖRE = EDAT ADAYI"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">93. Dil Bilgisi</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde edat vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q93" value="A" data-q="93">
+          <span><b>A)</b> A) Senin gibi çalışkanını görmedim.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q93" value="B" data-q="93">
+          <span><b>B)</b> B) Ali ve Ayşe geldi.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q93" value="C" data-q="93">
+          <span><b>C)</b> C) Kitabı okudu.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q93" value="D" data-q="93">
+          <span><b>D)</b> D) Çocuklar oynuyor.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q93" value="E" data-q="93">
+          <span><b>E)</b> E) Hızlı koştu.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-94" data-qno="94" data-topic="Dil Bilgisi"
+             data-answer="B"
+             data-note="“Ve” bağlaçtır; iki unsuru bağlar."
+             data-code="VE/AMA/FAKAT/ANCAK = BAĞLAÇ"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">94. Dil Bilgisi</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde bağlaç vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q94" value="A" data-q="94">
+          <span><b>A)</b> A) Senin için geldim.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q94" value="B" data-q="94">
+          <span><b>B)</b> B) Sen ve ben aynı gruptayız.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q94" value="C" data-q="94">
+          <span><b>C)</b> C) Senin gibi çalışıyorum.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q94" value="D" data-q="94">
+          <span><b>D)</b> D) Akşama kadar bekledim.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q94" value="E" data-q="94">
+          <span><b>E)</b> E) Bana göre doğru.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-95" data-qno="95" data-topic="Dil Bilgisi"
+             data-answer="B"
+             data-note="“En” sıfatın derecesini belirttiği için zarftır."
+             data-code="SIFATIN DERECESİNİ BELİRTEN = ZARF"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">95. Dil Bilgisi</div>
+      <div class="question">“En hızlı koşucu oydu.” cümlesinde “en” sözcüğünün görevi nedir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q95" value="A" data-q="95">
+          <span><b>A)</b> A) Zamir</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q95" value="B" data-q="95">
+          <span><b>B)</b> B) Zarf</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q95" value="C" data-q="95">
+          <span><b>C)</b> C) Bağlaç</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q95" value="D" data-q="95">
+          <span><b>D)</b> D) Edat</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q95" value="E" data-q="95">
+          <span><b>E)</b> E) Ünlem</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-96" data-qno="96" data-topic="Yazım"
+             data-answer="B"
+             data-note="“Hiçbir” bitişik; “zaman” ayrı yazılır."
+             data-code="HİÇBİR + İSİM = HİÇBİR BİTİŞİK"
+             data-expl="Doğru cevap B’dir.">
+      <div class="topic">96. Yazım</div>
+      <div class="question">Aşağıdakilerden hangisi doğru yazılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q96" value="A" data-q="96">
+          <span><b>A)</b> A) hiç bir zaman</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q96" value="B" data-q="96">
+          <span><b>B)</b> B) hiçbir zaman</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q96" value="C" data-q="96">
+          <span><b>C)</b> C) hiçbirzaman</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q96" value="D" data-q="96">
+          <span><b>D)</b> D) hiç birzaman</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q96" value="E" data-q="96">
+          <span><b>E)</b> E) hiçbir zamanlar</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-97" data-qno="97" data-topic="Noktalama"
+             data-answer="A"
+             data-note="Parantez cümleye ek/açıklayıcı bilgi vermek için kullanılabilir."
+             data-code="PARANTEZ = ANA CÜMLEYE EK BİLGİ"
+             data-expl="Doğru cevap A’dır.">
+      <div class="topic">97. Noktalama</div>
+      <div class="question">Aşağıdakilerden hangisinde parantez açıklayıcı ek bilgi vermek amacıyla doğru kullanılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q97" value="A" data-q="97">
+          <span><b>A)</b> A) Ankara (Türkiye&#039;nin başkenti) İç Anadolu&#039;dadır.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q97" value="B" data-q="97">
+          <span><b>B)</b> B) Ankara Türkiye&#039;nin (başkentidir).</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q97" value="C" data-q="97">
+          <span><b>C)</b> C) Kitap (çok güzel).</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q97" value="D" data-q="97">
+          <span><b>D)</b> D) Sabah (erken) kalktı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q97" value="E" data-q="97">
+          <span><b>E)</b> E) O (ve) geldi.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-98" data-qno="98" data-topic="Sözcükte Anlam"
+             data-answer="C"
+             data-note="“İçini yakmak” gerçek bir yanma değil, derin bir üzüntü verme anlamındadır."
+             data-code="İÇİNİ YAKMAK = ÜZMEK"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">98. Sözcükte Anlam</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde “yakmak” sözcüğü mecaz anlamda kullanılmıştır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q98" value="A" data-q="98">
+          <span><b>A)</b> A) Sobaya odun attı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q98" value="B" data-q="98">
+          <span><b>B)</b> B) Güneş yüzünü yaktı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q98" value="C" data-q="98">
+          <span><b>C)</b> C) Sözleri içini yaktı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q98" value="D" data-q="98">
+          <span><b>D)</b> D) Kâğıdı ateşe attı.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q98" value="E" data-q="98">
+          <span><b>E)</b> E) Lambayı yakmayı unuttu.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-99" data-qno="99" data-topic="Cümlede Anlam"
+             data-answer="C"
+             data-note="“Mutlaka” kesinlik bildirir; diğer seçenekler olasılık/tahmin içerir."
+             data-code="MUTLAKA = KESİN"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">99. Cümlede Anlam</div>
+      <div class="question">Aşağıdaki cümlelerin hangisinde kesinlik anlamı vardır?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q99" value="A" data-q="99">
+          <span><b>A)</b> A) Sanırım yarın gelir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q99" value="B" data-q="99">
+          <span><b>B)</b> B) Galiba toplantı ertelendi.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q99" value="C" data-q="99">
+          <span><b>C)</b> C) Mutlaka bu işi tamamlayacağız.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q99" value="D" data-q="99">
+          <span><b>D)</b> D) Belki daha sonra arar.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q99" value="E" data-q="99">
+          <span><b>E)</b> E) Herhâlde bugün yağmur yağacak.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+    <article class="qcard" id="qcard-100" data-qno="100" data-topic="Paragraf"
+             data-answer="C"
+             data-note="Parça, aralıklı tekrarın bilgiyi uzun süre hatırlamaya katkısını vurguluyor."
+             data-code="ÖĞRENME = ÖĞREN + GERİ ÇAĞIR + TEKRAR"
+             data-expl="Doğru cevap C’dir.">
+      <div class="topic">100. Paragraf</div>
+      <div class="question">Bir bilgiyi öğrenmek kadar doğru zamanda geri çağırabilmek de önemlidir. Bu nedenle öğrenilen konuyu belirli aralıklarla yeniden hatırlamak, uzun süreli öğrenmeyi destekler.<br><br>Bu parçanın ana düşüncesi aşağıdakilerden hangisidir?</div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="q100" value="A" data-q="100">
+          <span><b>A)</b> A) İlk okumada her bilgi unutulur.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q100" value="B" data-q="100">
+          <span><b>B)</b> B) Tekrar gereksizdir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q100" value="C" data-q="100">
+          <span><b>C)</b> C) Aralıklı tekrar öğrenmenin kalıcılığını destekler.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q100" value="D" data-q="100">
+          <span><b>D)</b> D) Öğrenme yalnızca ezberden ibarettir.</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="q100" value="E" data-q="100">
+          <span><b>E)</b> E) Her konu aynı sıklıkta tekrar edilmelidir.</span>
+        </label></div>
+      <div class="feedback" aria-live="polite"></div>
+    </article>
+</div>
+<section class="card">
+  <div class="topic">Kaynaklar</div>
+  <details><summary><b>ÖSYM — 2024 KPSS Ön Lisans Temel Soru Kitapçığı ve Cevap Anahtarı</b></summary><a href="https://www.osym.gov.tr/2024kpss-on-lisans-temel-soru-kitapcigi-ve-cevap-anahtari-10" target="_blank" rel="noopener">https://www.osym.gov.tr/2024kpss-on-lisans-temel-soru-kitapcigi-ve-cevap-anahtari-10</a></details><details><summary><b>ÖSYM — 2022 KPSS Ön Lisans Temel Soru Kitapçığı ve Cevap Anahtarı</b></summary><a href="https://www.osym.gov.tr/2022kpss-on-lisans-temel-soru-kitapcigi-ve-cevap-anahtari-10" target="_blank" rel="noopener">https://www.osym.gov.tr/2022kpss-on-lisans-temel-soru-kitapcigi-ve-cevap-anahtari-10</a></details><details><summary><b>ÖSYM — 2020 KPSS Ön Lisans Temel Soru Kitapçığı ve Cevap Anahtarı</b></summary><a href="https://www.osym.gov.tr/2020kpss-on-lisans-temel-soru-kitapcigi-ve-cevap-anahtari-10" target="_blank" rel="noopener">https://www.osym.gov.tr/2020kpss-on-lisans-temel-soru-kitapcigi-ve-cevap-anahtari-10</a></details><details><summary><b>ÖSYM — 2018 KPSS Ön Lisans Temel Soru Kitapçığı ve Cevap Anahtarı</b></summary><a href="https://www.osym.gov.tr/2018kpss-on-lisans-temel-soru-kitapcigi-ve-cevap-anahtari-10" target="_blank" rel="noopener">https://www.osym.gov.tr/2018kpss-on-lisans-temel-soru-kitapcigi-ve-cevap-anahtari-10</a></details><details><summary><b>ÖSYM — KPSS sınav grubu ve soru arşivi</b></summary><a href="https://www.osym.gov.tr/SinavGrubu/Menu/344" target="_blank" rel="noopener">https://www.osym.gov.tr/SinavGrubu/Menu/344</a></details><details><summary><b>MEB Talim ve Terbiye Kurulu — Öğretim Programları</b></summary><a href="https://mufredat.meb.gov.tr/Programlar.aspx" target="_blank" rel="noopener">https://mufredat.meb.gov.tr/Programlar.aspx</a></details><details><summary><b>MEB — Türkiye Yüzyılı Maarif Modeli, Türk Dili ve Edebiyatı</b></summary><a href="https://tymm.meb.gov.tr/ogretim-programlari/ders/turk-dili-ve-edebiyati-dersi" target="_blank" rel="noopener">https://tymm.meb.gov.tr/ogretim-programlari/ders/turk-dili-ve-edebiyati-dersi</a></details>
+</section>
+<div class="static-note">Geçmiş ÖSYM soruları aynen kopyalanmamıştır; özgün sorular hazırlanmıştır.</div>
+</main>
+
+<script>
+document.body.classList.add("js-mode");
+const cards=[...document.querySelectorAll(".qcard")];
+const letters="ABCDE";
+let idx=0, mode="main", reinforceIndex=null, correct=0, wrong=0, answered=new Set();
+
+function update(){
+  document.getElementById("bar").style.width=((idx)/cards.length*100)+"%";
+  document.getElementById("status").textContent="Ana soru: "+Math.min(idx+1,cards.length)+" / "+cards.length;
+  document.getElementById("correct").textContent=correct;
+  document.getElementById("wrong").textContent=wrong;
+}
+function show(i){
+  cards.forEach(c=>c.classList.remove("active"));
+  if(cards[i]) cards[i].classList.add("active");
+  update(); window.scrollTo({top:0,behavior:"smooth"});
+}
+function feedback(card,msg,good){
+  const f=card.querySelector(".feedback"); f.className="feedback "+(good?"good":"bad");
+  f.innerHTML=msg; f.style.display="block";
+}
+function answer(card, choice){
+  const right=card.dataset.answer;
+  card.querySelectorAll('input[type=radio]').forEach(x=>x.disabled=true);
+  if(choice===right){
+    correct++;
+    feedback(card, "<b>Doğru.</b><div class='box'><b>Kalıcı bilgi:</b> "+card.dataset.note+"</div><div class='box'><b>Kodlama:</b> "+card.dataset.code+"</div><button class='btn' style='margin-top:10px' onclick='advance()'>Sonraki soru</button>", true);
+  }else{
+    wrong++;
+    const current=Number(card.dataset.qno)-1;
+    reinforceIndex=cards.findIndex((c,i)=>i!==current && c.dataset.topic===card.dataset.topic);
+    feedback(card, "<b>Yanlış.</b><div class='box'><b>Önemli konu:</b> "+card.dataset.note+"</div><div class='box'><b>Akılda kalıcı kodlama:</b> "+card.dataset.code+"</div><div class='box'><b>Açıklama:</b> "+card.dataset.expl+"</div><div style='margin-top:8px'><b>Doğru cevap:</b> "+right+"</div>"+(reinforceIndex>=0?"<button class='btn' style='margin-top:10px;background:#b42318' onclick='showReinforce()'>Aynı konudan pekiştirme sorusu</button>":""));
+  }
+  update();
+}
+function bind(){
+  cards.forEach(card=>card.querySelectorAll("input").forEach(input=>input.addEventListener("change",()=>answer(card,input.value))));
+}
+function showReinforce(){
+  if(reinforceIndex<0) return;
+  mode="reinforce"; show(reinforceIndex);
+}
+function advance(){
+  idx++;
+  mode="main";
+  if(idx>=cards.length){document.getElementById("status").textContent="100 / 100 tamamlandı";document.getElementById("bar").style.width="100%";return;}
+  show(idx);
+}
+document.getElementById("reset").onclick=()=>location.reload();
+bind();
+show(0);
+</script>
+</body></html>
